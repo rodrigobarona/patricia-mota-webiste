@@ -42,14 +42,15 @@ export default function PublicationsPage() {
 
       // Mock data that would come from Google Scholar
       const mockPublications: Publication[] = [
-       {
+      {
     "id": "1",
     "title": "Prevalence and risk factors of diastasis recti abdominis from late pregnancy to 6 months postpartum, and relationship with lumbo-pelvic pain",
     "authors": "PGF da Mota, AGBA Pascoal, AIAD Carita, K Bø",
     "journal": "Manual Therapy 20 (1), 200–205",
     "year": "2015",
     "citationCount": 402,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&citation_for_view=fNJsrScAAAAJ:roLk4NBRz8UC",
+    "doi": "10.1016/j.math.2014.09.002",
+    "url": "https://doi.org/10.1016/j.math.2014.09.002",
     "type": "journal"
   },
   {
@@ -59,7 +60,8 @@ export default function PublicationsPage() {
     "journal": "Journal of Orthopaedic & Sports Physical Therapy 42 (11), 940–946",
     "year": "2012",
     "citationCount": 188,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=16620520675008830084",
+    "doi": "10.2519/jospt.2012.4115",
+    "url": "https://doi.org/10.2519/jospt.2012.4115",
     "type": "journal"
   },
   {
@@ -69,7 +71,8 @@ export default function PublicationsPage() {
     "journal": "Journal of Orthopaedic & Sports Physical Therapy 45 (10), 781–788",
     "year": "2015",
     "citationCount": 170,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=6243102162296243395",
+    "doi": "10.2519/jospt.2015.5459",
+    "url": "https://doi.org/10.2519/jospt.2015.5459",
     "type": "journal"
   },
   {
@@ -79,7 +82,8 @@ export default function PublicationsPage() {
     "journal": "Manual Therapy 18 (4), 294–298",
     "year": "2013",
     "citationCount": 158,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=2318598787891715822",
+    "doi": "10.1016/j.math.2012.10.013",
+    "url": "https://doi.org/10.1016/j.math.2012.10.013",
     "type": "journal"
   },
   {
@@ -89,7 +93,8 @@ export default function PublicationsPage() {
     "journal": "Physiotherapy 100 (4), 344–348",
     "year": "2014",
     "citationCount": 152,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=17782459121054432690",
+    "doi": "10.1016/j.physio.2013.11.006",
+    "url": "https://doi.org/10.1016/j.physio.2013.11.006",
     "type": "journal"
   },
   {
@@ -99,7 +104,8 @@ export default function PublicationsPage() {
     "journal": "Physiotherapy 101 (3), 286–291",
     "year": "2015",
     "citationCount": 151,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=252083268315713554",
+    "doi": "10.1016/j.physio.2015.04.004",
+    "url": "https://doi.org/10.1016/j.physio.2015.04.004",
     "type": "journal"
   },
   {
@@ -109,7 +115,8 @@ export default function PublicationsPage() {
     "journal": "Musculoskeletal Science and Practice 35, 34–37",
     "year": "2018",
     "citationCount": 126,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=2431985006401479992",
+    "doi": "10.1016/j.msksp.2018.02.004",
+    "url": "https://doi.org/10.1016/j.msksp.2018.02.004",
     "type": "journal"
   },
   {
@@ -119,7 +126,8 @@ export default function PublicationsPage() {
     "journal": "Current Women's Health Reviews 11 (1), 59–67",
     "year": "2015",
     "citationCount": 55,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=14890122415070944432",
+    "doi": "10.2174/1573403X11511010059",
+    "url": "https://doi.org/10.2174/1573403X11511010059",
     "type": "journal"
   },
   {
@@ -129,7 +137,8 @@ export default function PublicationsPage() {
     "journal": "Obstetrics & Gynecology 137 (2), 376",
     "year": "2021",
     "citationCount": 33,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=8814812830936185119",
+    "doi": "10.1097/AOG.0000000000004267",
+    "url": "https://doi.org/10.1097/AOG.0000000000004267",
     "type": "journal"
   },
   {
@@ -139,17 +148,19 @@ export default function PublicationsPage() {
     "journal": "Journal of Biomechanics 46 (1), 129–136",
     "year": "2013",
     "citationCount": 20,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=11736704531873142931",
+    "doi": "10.1016/j.jbiomech.2012.10.041",
+    "url": "https://doi.org/10.1016/j.jbiomech.2012.10.041",
     "type": "journal"
   },
-  {
+   {
     "id": "11",
     "title": "Technical aspects of inter-recti distance measurement with ultrasonographic imaging for physiotherapy purposes: the scoping review",
     "authors": "A Opala-Berdzik, M Rudek-Zeprzałka, J Niesporek, M Cebula, J Baron, ...",
     "journal": "Insights into Imaging 14 (1), 92",
     "year": "2023",
     "citationCount": 12,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=5990545990762364242",
+    "doi": "10.1186/s13244-023-01443-4",
+    "url": "https://doi.org/10.1186/s13244-023-01443-4",
     "type": "journal"
   },
   {
@@ -159,7 +170,8 @@ export default function PublicationsPage() {
     "journal": "Women's Health and Biomechanics: Where Medicine and Engineering Meet, 121–132",
     "year": "2018",
     "citationCount": 12,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=7136265399277573817",
+    "doi": "10.1007/978-3-319-71574-2_10",
+    "url": "https://doi.org/10.1007/978-3-319-71574-2_10",
     "type": "book"
   },
   {
@@ -169,7 +181,8 @@ export default function PublicationsPage() {
     "journal": "Physiotherapy 101, e1050–e1051",
     "year": "2015",
     "citationCount": 10,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=8513164834251333481",
+    "doi": "10.1016/j.physio.2015.03.1928",
+    "url": "https://doi.org/10.1016/j.physio.2015.03.1928",
     "type": "journal"
   },
   {
@@ -179,7 +192,8 @@ export default function PublicationsPage() {
     "journal": "International Urogynecology Journal 34 (9), 1997–2005",
     "year": "2023",
     "citationCount": 6,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=6878284230454888170",
+    "doi": "10.1007/s00192-023-05526-0",
+    "url": "https://doi.org/10.1007/s00192-023-05526-0",
     "type": "journal"
   },
   {
@@ -189,7 +203,8 @@ export default function PublicationsPage() {
     "journal": "Exercise and Physical Activity During Pregnancy and Postpartum: Evidence …",
     "year": "2022",
     "citationCount": 4,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=8969841596613253544",
+    "doi": "10.1007/978-3-319-91032-1_10",
+    "url": "https://doi.org/10.1007/978-3-319-91032-1_10",
     "type": "book"
   },
   {
@@ -199,6 +214,7 @@ export default function PublicationsPage() {
     "journal": "Journal of Biomechanics 45, S493",
     "year": "2012",
     "citationCount": 4,
+    "doi": "",
     "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=14430390167188541743",
     "type": "journal"
   },
@@ -209,7 +225,8 @@ export default function PublicationsPage() {
     "journal": "Neurourology and Urodynamics 42 (5), 1162–1168",
     "year": "2023",
     "citationCount": 2,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=14029325962613597330",
+    "doi": "10.1002/nau.25180",
+    "url": "https://doi.org/10.1002/nau.25180",
     "type": "journal"
   },
   {
@@ -219,17 +236,19 @@ export default function PublicationsPage() {
     "journal": "International Society of Biomechanics XXIII Congress, 3–7",
     "year": "2011",
     "citationCount": 2,
+    "doi": "",
     "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=17166153426739146416",
     "type": "conference"
   },
   {
     "id": "19",
-    "title": "On “The impact of hypopressive abdominal exercise on Linea Alba morphology in women who are postpartum: a short-term cross-sectional study.” Arranz-Martín B, Navarro-Brazález B …",
+    "title": "On “The impact of hypopressive abdominal exercise on Linea Alba morphology in women who are postpartum: a short-term cross-sectional study.”",
     "authors": "P Mota, NM Theodorsen, S Gluppe, K Bø",
     "journal": "Physical Therapy 103 (4), pzad018",
     "year": "2023",
     "citationCount": 1,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=10574981612621997824",
+    "doi": "10.1093/ptj/pzad018",
+    "url": "https://doi.org/10.1093/ptj/pzad018",
     "type": "journal"
   },
   {
@@ -239,6 +258,7 @@ export default function PublicationsPage() {
     "journal": "Instituto Politécnico de Santarém",
     "year": "2020",
     "citationCount": 1,
+    "doi": "",
     "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=16773139142481104961",
     "type": "book"
   },
@@ -249,27 +269,30 @@ export default function PublicationsPage() {
     "journal": "Journal of Biomechanics 45, S460",
     "year": "2012",
     "citationCount": 1,
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=1044497119337901590",
+    "doi": "10.1016/S0021-9290(12)70461-X",
+    "url": "https://doi.org/10.1016/S0021-9290(12)70461-X",
     "type": "journal"
   },
   {
     "id": "22",
     "title": "Alterations of the abdominal wall during pregnancy",
     "authors": "P Mota",
-    "journal": "Post-maternity Body Changes: Obstetric Fundamentals and Surgical Reshaping …",
+    "journal": "Post-maternity Body Changes: Obstetric Fundamentals and Surgical Reshaping",
     "year": "2023",
     "citationCount": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:ULOm3_A8WrAC",
+    "doi": "",
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=ULOm3_A8WrAC",
     "type": "book"
   },
   {
     "id": "23",
     "title": "Guía de Práctica Clínica sobre la Actividad Física durante el Embarazo",
-    "authors": "R Barakat, M Sánchez-Polan, C Silva-Jose, A Uria-Minguito, D Zhang, ...",
+    "authors": "R Barakat, M Sánchez-Polán, C Silva-Jose, A Uria-Minguito, D Zhang, ...",
     "journal": "",
     "year": "2023",
     "citationCount": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:YOwf2qJgpHMC",
+    "doi": "",
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=YOwf2qJgpHMC",
     "type": "book"
   },
   {
@@ -279,7 +302,8 @@ export default function PublicationsPage() {
     "journal": "",
     "year": "2023",
     "citationCount": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:4TOpqqG69KYC",
+    "doi": "",
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=4TOpqqG69KYC",
     "type": "conference"
   },
   {
@@ -289,17 +313,19 @@ export default function PublicationsPage() {
     "journal": "",
     "year": "2022",
     "citationCount": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:M3ejUd6NZC8C",
+    "doi": "",
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=M3ejUd6NZC8C",
     "type": "conference"
   },
   {
     "id": "26",
     "title": "Surface electromyography and three/four-dimension ultrasound assessment of the pelvic floor in women with severe perineal tear",
-    "authors": "M Pinto-Coelho, K Bo, A Henriques, P Mota",
+    "authors": "M Pinto-Coelho, K Bø, A Henriques, P Mota",
     "journal": "",
     "year": "2021",
     "citationCount": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:_kc_bZDykSQC",
+    "doi": "",
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=_kc_bZDykSQC",
     "type": "journal"
   },
   {
@@ -309,7 +335,8 @@ export default function PublicationsPage() {
     "journal": "Instituto Politécnico de Santarém",
     "year": "2020",
     "citationCount": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:0EnyYjriUFMC",
+    "doi": "",
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=0EnyYjriUFMC",
     "type": "book"
   },
   {
@@ -319,7 +346,8 @@ export default function PublicationsPage() {
     "journal": "BioMedWomen, 195–198",
     "year": "2016",
     "citationCount": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:UeHWp8X0CEIC",
+    "doi": "",
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=UeHWp8X0CEIC",
     "type": "conference"
   },
   {
@@ -329,7 +357,8 @@ export default function PublicationsPage() {
     "journal": "PQDT-Global",
     "year": "2014",
     "citationCount": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:Se3iqnhoufwC",
+    "doi": "",
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=Se3iqnhoufwC",
     "type": "book"
   },
   {
@@ -339,15 +368,17 @@ export default function PublicationsPage() {
     "journal": "Journal of Biomechanics 45, S221",
     "year": "2012",
     "citationCount": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:MXK_kJrjxJIC",
+    "doi": "",
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=11736704531873142931",
     "type": "journal"
-  },
-          {
+  },{
     "id": "31",
     "title": "Can Drawing in and Abdominal Crunch Exercises narrow the Inter-rectus Distance?",
     "authors": "P Mota; A G Pascoal; A I Carita; K Bø",
     "venue": "International Society of Biomechanics, Glasgow, 2015",
     "year": "2015",
+    "doi": "",
+    "url": "",
     "type": "conference"
   },
   {
@@ -356,6 +387,8 @@ export default function PublicationsPage() {
     "authors": "P Mota; A G Pascoal; A I Carita; K Bø",
     "venue": "XXIV Congress of the International Society of Biomechanics, Natal, 2013",
     "year": "2013",
+    "doi": "",
+    "url": "",
     "type": "conference"
   },
   {
@@ -364,13 +397,18 @@ export default function PublicationsPage() {
     "authors": "A I Carita; P Mota; A G Pascoal",
     "venue": "XX Congresso Anual da Sociedade Portuguesa de Estatística, Porto, 2012",
     "year": "2012",
+    "doi": "",
+    "url": "",
     "type": "conference"
-  },{
+  },
+  {
     "id": "34",
     "title": "Does The Partial Sit-Up Exercise Reduce The Postpartum Inter-Rectus Abdominis Distance?",
     "authors": "A G Pascoal; M F Sancho; P Mota; K Bø",
     "venue": "XXIV Congress of the International Society of Biomechanics, 2013",
     "year": "2013",
+    "doi": "",
+    "url": "",
     "type": "conference"
   }
       ]
@@ -491,45 +529,64 @@ export default function PublicationsPage() {
                     ) : filteredPublications.length > 0 ? (
                       // Publication cards
                       filteredPublications.map((publication) => (
-                        <Card
-                          key={publication.id}
-                          className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300"
-                        >
-                          <CardContent className="p-0">
-                            <div className="p-6 space-y-3">
-                              <div className="flex items-center gap-2 text-amber-600">
-                                <FileText className="h-4 w-4" />
-                                <span className="text-xs font-medium">
-                                  {publication.type.charAt(0).toUpperCase() + publication.type.slice(1)} (
-                                  {publication.year})
-                                </span>
-                              </div>
-                              <h3 className="text-xl font-serif font-bold text-slate-900">{publication.title}</h3>
-                              <p className="text-slate-600">
-                                <strong>Authors:</strong> {publication.authors}
-                              </p>
-                              <p className="text-slate-600">
-                                <strong>Published in:</strong> {publication.journal}
-                              </p>
-                              <div className="flex items-center justify-between pt-4">
-                                <div className="flex items-center gap-2">
-                                  <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800">
-                                    {publication.citationCount} citations
-                                  </span>
-                                </div>
-                                <a
-                                  href={publication.url}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                  className="inline-flex items-center text-sm font-medium text-amber-600 hover:text-amber-800 transition-colors"
-                                >
-                                  View on Google Scholar
-                                  <ArrowRight className="ml-1 h-4 w-4" />
-                                </a>
-                              </div>
-                            </div>
-                          </CardContent>
-                        </Card>
+                      <Card
+  key={publication.id}
+  className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300"
+>
+  <CardContent className="p-0">
+    <div className="p-6 space-y-3">
+      <div className="flex items-center gap-2 text-amber-600">
+        <FileText className="h-4 w-4" />
+        <span className="text-xs font-medium">
+          {publication.type.charAt(0).toUpperCase() + publication.type.slice(1)} (
+          {publication.year})
+        </span>
+      </div>
+
+      <h3 className="text-xl font-serif font-bold text-slate-900">
+        {publication.title}
+      </h3>
+
+      <p className="text-slate-600">
+        <strong>Authors:</strong> {publication.authors}
+      </p>
+
+      {/* Show journal OR venue */}
+      {(publication.journal || publication.venue) && (
+        <p className="text-slate-600">
+          <strong>Published in:</strong>{" "}
+          {publication.journal ?? publication.venue}
+        </p>
+      )}
+
+      <div className="flex items-center justify-between pt-4">
+        {/* Only show citations if > 0 */}
+        {publication.citationCount > 0 && (
+          <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800">
+            {publication.citationCount} citation
+            {publication.citationCount > 1 ? "s" : ""}
+          </span>
+        )}
+
+        {/* Link prefers DOI, falls back to Google Scholar URL */}
+        <a
+          href={
+            publication.doi
+              ? `https://doi.org/${publication.doi}`
+              : publication.url
+          }
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center text-sm font-medium text-amber-600 hover:text-amber-800 transition-colors"
+        >
+          View {publication.doi ? "DOI" : "article"}
+          <ArrowRight className="ml-1 h-4 w-4" />
+        </a>
+      </div>
+    </div>
+  </CardContent>
+</Card>
+
                       ))
                     ) : (
                       // No results
