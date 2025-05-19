@@ -426,7 +426,7 @@ export default function PublicationsPage() {
                 </h1>
                 <p className="text-slate-700 md:text-xl max-w-[800px] mx-auto font-light">
                   A collection of my research publications in women&apos;s health, biomechanics, and clinical gait
-                  analysis, synchronized with my <span className="font-medium">Google Scholar</span> profile.
+                  analysis.
                 </p>
               </div>
               <div className="w-full max-w-md mt-8">
@@ -542,7 +542,7 @@ export default function PublicationsPage() {
               </Tabs>
             </div>
             <div className="flex justify-center mt-16">
-              <a href="https://scholar.google.pt/citations" target="_blank" rel="noreferrer">
+              <a href="https://scholar.google.com/citations?user=fNJsrScAAAAJ" target="_blank" rel="noreferrer">
                 <Button className="inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-amber-500 to-rose-500 px-8 text-sm font-medium text-white shadow-lg transition-all hover:shadow-xl hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:pointer-events-none disabled:opacity-50">
                   View Complete Google Scholar Profile
                   <ArrowRight className="ml-2 h-4 w-4" />
