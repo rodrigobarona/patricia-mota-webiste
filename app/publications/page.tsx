@@ -341,6 +341,37 @@ export default function PublicationsPage() {
     "citationCount": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:MXK_kJrjxJIC",
     "type": "journal"
+  },
+          {
+    "id": "31",
+    "title": "Can Drawing in and Abdominal Crunch Exercises narrow the Inter-rectus Distance?",
+    "authors": "P Mota; A G Pascoal; A I Carita; K Bø",
+    "venue": "International Society of Biomechanics, Glasgow, 2015",
+    "year": "2015",
+    "type": "conference"
+  },
+  {
+    "id": "32",
+    "title": "Diastasis Recovery After Pregnancy. A Follow Up Ultrasound Study On Changes Of Inter-Recti Distance From Late Pregnancy Till 6 Months Postpartum.",
+    "authors": "P Mota; A G Pascoal; A I Carita; K Bø",
+    "venue": "XXIV Congress of the International Society of Biomechanics, Natal, 2013",
+    "year": "2013",
+    "type": "conference"
+  },
+  {
+    "id": "33",
+    "title": "Como avaliar a concordância entre instrumentos com escalas de medição distintas?",
+    "authors": "A I Carita; P Mota; A G Pascoal",
+    "venue": "XX Congresso Anual da Sociedade Portuguesa de Estatística, Porto, 2012",
+    "year": "2012",
+    "type": "conference"
+  },{
+    "id": "34",
+    "title": "Does The Partial Sit-Up Exercise Reduce The Postpartum Inter-Rectus Abdominis Distance?",
+    "authors": "A G Pascoal; M F Sancho; P Mota; K Bø",
+    "venue": "XXIV Congress of the International Society of Biomechanics, 2013",
+    "year": "2013",
+    "type": "conference"
   }
       ]
 
