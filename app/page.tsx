@@ -101,7 +101,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <div className="relative h-[400px] w-[300px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
                   <Image
-                    src="/placeholder.svg?height=800&width=600"
+                    src="/patricia-mota-pt-phd-profile.webp?height=800&width=600"
                     alt="Patricia Mota"
                     className="object-cover"
                     fill
