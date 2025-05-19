@@ -46,7 +46,7 @@ export default function AboutPage() {
               <div className="flex items-center justify-center">
                 <div className="relative h-[500px] w-[400px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
                   <Image
-                    src="/placeholder.svg?height=1000&width=800"
+                    src="/patricia-mota-pt-phd-profile.webp?height=1000&width=800"
                     alt="Patricia Mota"
                     className="object-cover"
                     fill
