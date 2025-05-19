@@ -291,8 +291,8 @@ export default function PublicationsPage() {
     "journal": "",
     "year": "2023",
     "citationCount": 0,
-    "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=YOwf2qJgpHMC",
+    "doi": "11531/78387",
+    "url": "http://hdl.handle.net/11531/78387",
     "type": "book"
   },
   {
@@ -335,8 +335,8 @@ export default function PublicationsPage() {
     "journal": "Instituto Politécnico de Santarém",
     "year": "2020",
     "citationCount": 0,
-    "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=0EnyYjriUFMC",
+    "doi": "10400.21/12965",
+    "url": "http://hdl.handle.net/10400.21/12965",
     "type": "book"
   },
   {
@@ -347,8 +347,8 @@ export default function PublicationsPage() {
     "year": "2016",
     "citationCount": 0,
     "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=UeHWp8X0CEIC",
-    "type": "conference"
+    "url": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781315644622-52/ultrasound-imaging-transducer-orientation-displacement-diastasis-recti-assessment-mota-pascoal-vaz-jo%C3%A3o-veloso-b%C3%B8",
+    "type": "book"
   },
   {
     "id": "29",
@@ -357,19 +357,19 @@ export default function PublicationsPage() {
     "journal": "PQDT-Global",
     "year": "2014",
     "citationCount": 0,
-    "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=Se3iqnhoufwC",
+    "doi": "10.2519/JOSPT.2012.4115",
+    "url": "https://doi.org/10.2519/JOSPT.2012.4115",
     "type": "book"
   },
   {
     "id": "30",
-    "title": "NATURAL SHOCK ABSORPTION OF THE LEG SPRING",
+    "title": "The natural shock absorption of the leg spring",
     "authors": "W Kim, F João, P Mota, L Aguiar, A Veloso",
     "journal": "Journal of Biomechanics 45, S221",
     "year": "2012",
     "citationCount": 0,
-    "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=11736704531873142931",
+    "doi": "10.1016/j.jbiomech.2012.10.041",
+    "url": "https://doi.org/10.1016/j.jbiomech.2012.10.041",
     "type": "journal"
   },{
     "id": "31",
@@ -378,7 +378,7 @@ export default function PublicationsPage() {
     "venue": "International Society of Biomechanics, Glasgow, 2015",
     "year": "2015",
     "doi": "",
-    "url": "",
+    "url": "https://mcg.isbweb.org/isb-2015.html",
     "type": "conference"
   },
   {
@@ -388,7 +388,7 @@ export default function PublicationsPage() {
     "venue": "XXIV Congress of the International Society of Biomechanics, Natal, 2013",
     "year": "2013",
     "doi": "",
-    "url": "",
+    "url": "https://media.isbweb.org/images/conferences/isb-congresses/2013/poster/ps2-17x.pdf",
     "type": "conference"
   },
   {
@@ -398,7 +398,7 @@ export default function PublicationsPage() {
     "venue": "XX Congresso Anual da Sociedade Portuguesa de Estatística, Porto, 2012",
     "year": "2012",
     "doi": "",
-    "url": "",
+    "url": "https://sigarra.up.pt/feup/pt/PUB_GERAL.PUB_VIEW?pi_pub_base_id=9630",
     "type": "conference"
   },
   {
@@ -408,7 +408,7 @@ export default function PublicationsPage() {
     "venue": "XXIV Congress of the International Society of Biomechanics, 2013",
     "year": "2013",
     "doi": "",
-    "url": "",
+    "url": "https://isbweb.org/images/conferences/isb-congresses/2013/poster/ps2-17y.pdf",
     "type": "conference"
   }
       ]
@@ -591,7 +591,7 @@ export default function PublicationsPage() {
         rel="noreferrer"
         className="inline-flex items-center text-amber-600 hover:text-amber-800 transition-colors"
       >
-        View in Google Scholar
+        View article
         <ArrowRight className="ml-1 h-4 w-4" />
       </a>
     )}
