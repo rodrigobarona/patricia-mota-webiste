@@ -596,7 +596,7 @@ export default function PublicationsPage() {
       </a>
     )}
   </div>
-    </div>
+    </div></div>
   </CardContent>
 </Card>
 
