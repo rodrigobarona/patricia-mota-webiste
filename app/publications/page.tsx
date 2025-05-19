@@ -42,98 +42,306 @@ export default function PublicationsPage() {
 
       // Mock data that would come from Google Scholar
       const mockPublications: Publication[] = [
-        {
-          id: "1",
-          title:
-            "Pelvic floor muscle function after grade II tears—Surface electromyography test–retest and differences between nulliparous and primiparous",
-          authors: "Mota, P., Pascoal, A. G., Carita, A. I., & Bø, K.",
-          journal: "Journal of Women's Health Physical Therapy",
-          year: "2023",
-          citationCount: 42,
-          url: "https://scholar.google.com/citation1",
-          type: "journal",
-        },
-        {
-          id: "2",
-          title:
-            "Morphological and functional adaptations of the abdominal wall during pregnancy and in the postpartum period",
-          authors: "Mota, P., Pascoal, A. G., Bø, K., & Carita, A. I.",
-          journal: "Journal of Biomechanics",
-          year: "2022",
-          citationCount: 38,
-          url: "https://scholar.google.com/citation2",
-          type: "journal",
-        },
-        {
-          id: "3",
-          title: "An ultrasound study on the effect of exercise on postpartum women inter-rectus abdominis distance",
-          authors: "Mota, P., Pascoal, A. G., Carita, A. I., & Bø, K.",
-          journal: "Physical Therapy",
-          year: "2021",
-          citationCount: 56,
-          url: "https://scholar.google.com/citation3",
-          type: "journal",
-        },
-        {
-          id: "4",
-          title: "Normal width of the inter-recti distance in pregnant and postpartum primiparous women",
-          authors: "Mota, P., Pascoal, A. G., Carita, A. I., & Bø, K.",
-          journal: "Journal of Orthopaedic & Sports Physical Therapy",
-          year: "2020",
-          citationCount: 72,
-          url: "https://scholar.google.com/citation4",
-          type: "journal",
-        },
-        {
-          id: "5",
-          title: "Ultrasound imaging transducer orientation and displacement during Diastasis Recti Assessment",
-          authors: "Mota, P., Pascoal, A. G., & Bø, K.",
-          journal: "Manual Therapy",
-          year: "2019",
-          citationCount: 29,
-          url: "https://scholar.google.com/citation5",
-          type: "journal",
-        },
-        {
-          id: "6",
-          title: "Biomechanical Analysis of Pelvic Floor Muscle Function During Pregnancy",
-          authors: "Mota, P., Johnson, A., & Smith, B.",
-          journal: "International Conference on Women's Health Biomechanics",
-          year: "2023",
-          citationCount: 8,
-          url: "https://scholar.google.com/citation6",
-          type: "conference",
-        },
-        {
-          id: "7",
-          title: "Gait Analysis in Postpartum Women: A Longitudinal Study",
-          authors: "Mota, P., Williams, C., & Garcia, M.",
-          journal: "World Congress of Biomechanics",
-          year: "2022",
-          citationCount: 12,
-          url: "https://scholar.google.com/citation7",
-          type: "conference",
-        },
-        {
-          id: "8",
-          title: "Physiotherapy Interventions for Diastasis Recti",
-          authors: "Mota, P. & Anderson, J.",
-          journal: "Comprehensive Guide to Women's Health Physiotherapy, Academic Press",
-          year: "2023",
-          citationCount: 5,
-          url: "https://scholar.google.com/citation8",
-          type: "book",
-        },
-        {
-          id: "9",
-          title: "Biomechanical Principles in Women's Health",
-          authors: "Mota, P., Pascoal, A. G., & Bø, K.",
-          journal: "Textbook of Women's Health Physiotherapy, Elsevier",
-          year: "2021",
-          citationCount: 18,
-          url: "https://scholar.google.com/citation9",
-          type: "book",
-        },
+       {
+    "id": "1",
+    "title": "Prevalence and risk factors of diastasis recti abdominis from late pregnancy to 6 months postpartum, and relationship with lumbo-pelvic pain",
+    "authors": "PGF da Mota, AGBA Pascoal, AIAD Carita, K Bø",
+    "journal": "Manual Therapy 20 (1), 200–205",
+    "year": "2015",
+    "citationCount": 402,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&citation_for_view=fNJsrScAAAAJ:roLk4NBRz8UC",
+    "type": "journal"
+  },
+  {
+    "id": "2",
+    "title": "Test-retest and intrarater reliability of 2-dimensional ultrasound measurements of distance between rectus abdominis in women",
+    "authors": "P Mota, AG Pascoal, F Sancho, K Bø",
+    "journal": "Journal of Orthopaedic & Sports Physical Therapy 42 (11), 940–946",
+    "year": "2012",
+    "citationCount": 188,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=16620520675008830084",
+    "type": "journal"
+  },
+  {
+    "id": "3",
+    "title": "The immediate effects on inter-rectus distance of abdominal crunch and drawing-in exercises during pregnancy and the postpartum period",
+    "authors": "P Mota, AG Pascoal, AI Carita, K Bø",
+    "journal": "Journal of Orthopaedic & Sports Physical Therapy 45 (10), 781–788",
+    "year": "2015",
+    "citationCount": 170,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=6243102162296243395",
+    "type": "journal"
+  },
+  {
+    "id": "4",
+    "title": "Reliability of the inter-rectus distance measured by palpation. Comparison of palpation and ultrasound measurements",
+    "authors": "P Mota, AG Pascoal, F Sancho, AI Carita, K Bø",
+    "journal": "Manual Therapy 18 (4), 294–298",
+    "year": "2013",
+    "citationCount": 158,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=2318598787891715822",
+    "type": "journal"
+  },
+  {
+    "id": "5",
+    "title": "Inter-rectus distance in postpartum women can be reduced by isometric contraction of the abdominal muscles: a preliminary case–control study",
+    "authors": "AG Pascoal, S Dionisio, F Cordeiro, P Mota",
+    "journal": "Physiotherapy 100 (4), 344–348",
+    "year": "2014",
+    "citationCount": 152,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=17782459121054432690",
+    "type": "journal"
+  },
+  {
+    "id": "6",
+    "title": "Abdominal exercises affect inter-rectus distance in postpartum women: a two-dimensional ultrasound study",
+    "authors": "MF Sancho, AG Pascoal, P Mota, K Bø",
+    "journal": "Physiotherapy 101 (3), 286–291",
+    "year": "2015",
+    "citationCount": 151,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=252083268315713554",
+    "type": "journal"
+  },
+  {
+    "id": "7",
+    "title": "Normal width of the inter-recti distance in pregnant and postpartum primiparous women",
+    "authors": "P Mota, AG Pascoal, AI Carita, K Bø",
+    "journal": "Musculoskeletal Science and Practice 35, 34–37",
+    "year": "2018",
+    "citationCount": 126,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=2431985006401479992",
+    "type": "journal"
+  },
+  {
+    "id": "8",
+    "title": "Diastasis recti abdominis in pregnancy and postpartum period. Risk factors, functional implications and resolution",
+    "authors": "P Mota, A Gil Pascoal, K Bo",
+    "journal": "Current Women's Health Reviews 11 (1), 59–67",
+    "year": "2015",
+    "citationCount": 55,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=14890122415070944432",
+    "type": "journal"
+  },
+  {
+    "id": "9",
+    "title": "ACOG Committee Opinion No. 804: physical activity and exercise during pregnancy and the postpartum period",
+    "authors": "P Mota, K Bø",
+    "journal": "Obstetrics & Gynecology 137 (2), 376",
+    "year": "2021",
+    "citationCount": 33,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=8814812830936185119",
+    "type": "journal"
+  },
+  {
+    "id": "10",
+    "title": "The natural shock absorption of the leg spring",
+    "authors": "W Kim, F João, J Tan, P Mota, V Vleck, L Aguiar, A Veloso",
+    "journal": "Journal of Biomechanics 46 (1), 129–136",
+    "year": "2013",
+    "citationCount": 20,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=11736704531873142931",
+    "type": "journal"
+  },
+  {
+    "id": "11",
+    "title": "Technical aspects of inter-recti distance measurement with ultrasonographic imaging for physiotherapy purposes: the scoping review",
+    "authors": "A Opala-Berdzik, M Rudek-Zeprzałka, J Niesporek, M Cebula, J Baron, ...",
+    "journal": "Insights into Imaging 14 (1), 92",
+    "year": "2023",
+    "citationCount": 12,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=5990545990762364242",
+    "type": "journal"
+  },
+  {
+    "id": "12",
+    "title": "Diastasis Recti During Pregnancy and Postpartum",
+    "authors": "P Mota, AG Pascoal, C Vaz, F João, A Veloso, K Bø",
+    "journal": "Women's Health and Biomechanics: Where Medicine and Engineering Meet, 121–132",
+    "year": "2018",
+    "citationCount": 12,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=7136265399277573817",
+    "type": "book"
+  },
+  {
+    "id": "13",
+    "title": "Inter-recti distance at rest, during abdominal crunch and drawing in exercises during pregnancy and postpartum",
+    "authors": "P Mota, AG Pascoal, AI Carita, K Bø",
+    "journal": "Physiotherapy 101, e1050–e1051",
+    "year": "2015",
+    "citationCount": 10,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=8513164834251333481",
+    "type": "journal"
+  },
+  {
+    "id": "14",
+    "title": "A scoping review exploring stigma associated with postpartum urinary incontinence",
+    "authors": "JM Cox, M Sánchez-Polán, P Mota, R Barakat, TS Nagpal",
+    "journal": "International Urogynecology Journal 34 (9), 1997–2005",
+    "year": "2023",
+    "citationCount": 6,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=6878284230454888170",
+    "type": "journal"
+  },
+  {
+    "id": "15",
+    "title": "Therapeutic Exercise Regarding Musculoskeletal Health of the Pregnant Exerciser and Athlete",
+    "authors": "AG Pascoal, B Stuge, P Mota, G Hilde, K Bø",
+    "journal": "Exercise and Physical Activity During Pregnancy and Postpartum: Evidence …",
+    "year": "2022",
+    "citationCount": 4,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=8969841596613253544",
+    "type": "book"
+  },
+  {
+    "id": "16",
+    "title": "An ultrasound study on the effect of exercise on postpartum women inter-rectus abdominis distance",
+    "authors": "F Sancho, AG Pascoal, P Mota",
+    "journal": "Journal of Biomechanics 45, S493",
+    "year": "2012",
+    "citationCount": 4,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=14430390167188541743",
+    "type": "journal"
+  },
+  {
+    "id": "17",
+    "title": "Pelvic floor muscle function after grade II tears—Surface electromyography test–retest and differences between nulliparous and primiparous",
+    "authors": "P Mota, A Costa, D Santos, S Santo, JG Barros, K Bø",
+    "journal": "Neurourology and Urodynamics 42 (5), 1162–1168",
+    "year": "2023",
+    "citationCount": 2,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=14029325962613597330",
+    "type": "journal"
+  },
+  {
+    "id": "18",
+    "title": "Changes in superficial abdominal muscles morphology during pregnancy: a case study",
+    "authors": "P Mota, AG Pascoal, F Vieira",
+    "journal": "International Society of Biomechanics XXIII Congress, 3–7",
+    "year": "2011",
+    "citationCount": 2,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=17166153426739146416",
+    "type": "conference"
+  },
+  {
+    "id": "19",
+    "title": "On “The impact of hypopressive abdominal exercise on Linea Alba morphology in women who are postpartum: a short-term cross-sectional study.” Arranz-Martín B, Navarro-Brazález B …",
+    "authors": "P Mota, NM Theodorsen, S Gluppe, K Bø",
+    "journal": "Physical Therapy 103 (4), pzad018",
+    "year": "2023",
+    "citationCount": 1,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=10574981612621997824",
+    "type": "journal"
+  },
+  {
+    "id": "20",
+    "title": "Prevenção e tratamento da Incontinência Urinária",
+    "authors": "P Mota",
+    "journal": "Instituto Politécnico de Santarém",
+    "year": "2020",
+    "citationCount": 1,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=16773139142481104961",
+    "type": "book"
+  },
+  {
+    "id": "21",
+    "title": "ULTRASOUND MEASUREMENTS OF THE INTER-RECTUS ABDOMINIS DISTANCE",
+    "authors": "AG Pascoal, R Chityala, P Mota, F Sancho",
+    "journal": "Journal of Biomechanics 45, S460",
+    "year": "2012",
+    "citationCount": 1,
+    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=1044497119337901590",
+    "type": "journal"
+  },
+  {
+    "id": "22",
+    "title": "Alterations of the abdominal wall during pregnancy",
+    "authors": "P Mota",
+    "journal": "Post-maternity Body Changes: Obstetric Fundamentals and Surgical Reshaping …",
+    "year": "2023",
+    "citationCount": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:ULOm3_A8WrAC",
+    "type": "book"
+  },
+  {
+    "id": "23",
+    "title": "Guía de Práctica Clínica sobre la Actividad Física durante el Embarazo",
+    "authors": "R Barakat, M Sánchez-Polan, C Silva-Jose, A Uria-Minguito, D Zhang, ...",
+    "journal": "",
+    "year": "2023",
+    "citationCount": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:YOwf2qJgpHMC",
+    "type": "book"
+  },
+  {
+    "id": "24",
+    "title": "Feasibility study of a 4-week EPI-no® protocol in pregnant women",
+    "authors": "P Mota, F Guimarães, C Homsi-Jorge",
+    "journal": "",
+    "year": "2023",
+    "citationCount": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:4TOpqqG69KYC",
+    "type": "conference"
+  },
+  {
+    "id": "25",
+    "title": "A perspetiva das crianças sobre a participação das famílias no jardim de infância",
+    "authors": "P Mota",
+    "journal": "",
+    "year": "2022",
+    "citationCount": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:M3ejUd6NZC8C",
+    "type": "conference"
+  },
+  {
+    "id": "26",
+    "title": "Surface electromyography and three/four-dimension ultrasound assessment of the pelvic floor in women with severe perineal tear",
+    "authors": "M Pinto-Coelho, K Bo, A Henriques, P Mota",
+    "journal": "",
+    "year": "2021",
+    "citationCount": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:_kc_bZDykSQC",
+    "type": "journal"
+  },
+  {
+    "id": "27",
+    "title": "Prevenção e tratamento da diástase abdominal",
+    "authors": "P Mota",
+    "journal": "Instituto Politécnico de Santarém",
+    "year": "2020",
+    "citationCount": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:0EnyYjriUFMC",
+    "type": "book"
+  },
+  {
+    "id": "28",
+    "title": "Ultrasound imaging transducer orientation and displacement during Diastasis Recti Assessment",
+    "authors": "P Mota, AG Pascoal, C Vaz, F João, A Veloso, K Bø",
+    "journal": "BioMedWomen, 195–198",
+    "year": "2016",
+    "citationCount": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:UeHWp8X0CEIC",
+    "type": "conference"
+  },
+  {
+    "id": "29",
+    "title": "Morphological and functional adaptations of the abdominal wall during pregnancy and in the postpartum period",
+    "authors": "PGF da Mota",
+    "journal": "PQDT-Global",
+    "year": "2014",
+    "citationCount": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:Se3iqnhoufwC",
+    "type": "book"
+  },
+  {
+    "id": "30",
+    "title": "NATURAL SHOCK ABSORPTION OF THE LEG SPRING",
+    "authors": "W Kim, F João, P Mota, L Aguiar, A Veloso",
+    "journal": "Journal of Biomechanics 45, S221",
+    "year": "2012",
+    "citationCount": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=fNJsrScAAAAJ&cstart=20&citation_for_view=fNJsrScAAAAJ:MXK_kJrjxJIC",
+    "type": "journal"
+  }
       ]
 
       setPublications(mockPublications)
