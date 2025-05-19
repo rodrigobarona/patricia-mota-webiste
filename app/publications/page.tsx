@@ -507,7 +507,18 @@ export default function PublicationsPage() {
                   </TabsTrigger>
                 </TabsList>
 
-                {["journal", "conference", "book"].map((tabValue) => (
+                {["journal", "conference", "book"].map((tabValue) => {
+                  // Filter the publications for this tab
+                  const pubsForTab = filteredPublications.filter(
+                    (pub) => pub.type === tabValue
+                  );
+                
+                  // Create a sorted copy by year (newest first)
+                  const sortedByYear = [...pubsForTab].sort(
+                    (a, b) => b.year - a.year
+                  ); // flip for oldest first: (a, b) => a.year - b.year
+                
+                  return (
                   <TabsContent key={tabValue} value={tabValue} className="mt-6 space-y-8">
                     {loading ? (
                       // Loading skeletons
@@ -526,9 +537,8 @@ export default function PublicationsPage() {
                           </CardContent>
                         </Card>
                       ))
-                    ) : filteredPublications.length > 0 ? (
-                      // Publication cards
-                      filteredPublications.map((publication) => (
+                    ) : sortedByYear.length > 0 ? (
+                      sortedByYear.map((publication) => (
                       <Card
   key={publication.id}
   className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300"
