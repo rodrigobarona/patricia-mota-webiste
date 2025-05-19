@@ -618,7 +618,8 @@ export default function PublicationsPage() {
                       </div>
                     )}
                   </TabsContent>
-                ))}
+                );
+})}
               </Tabs>
             </div>
             <div className="flex justify-center mt-16">
