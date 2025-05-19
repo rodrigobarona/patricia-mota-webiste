@@ -559,30 +559,43 @@ export default function PublicationsPage() {
         </p>
       )}
 
-      <div className="flex items-center justify-between pt-4">
-        {/* Only show citations if > 0 */}
-        {publication.citationCount > 0 && (
-          <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800">
-            {publication.citationCount} citation
-            {publication.citationCount > 1 ? "s" : ""}
-          </span>
-        )}
-
-        {/* Link prefers DOI, falls back to Google Scholar URL */}
+    <div className="flex items-center pt-4">
+      {/* Only render citations badge when > 0 */}
+      {publication.citationCount > 0 && (
+        <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800">
+          {publication.citationCount} citation
+          {publication.citationCount > 1 ? "s" : ""}
+        </span>
+      )}
+    
+      {/* This wrapper pushes the link all the way to the right */}
+        <div className="ml-auto text-sm font-medium text-amber-600">
+    {publication.doi ? (
+      // If we have a DOI, just display it
+      <span>
+        DOI:{" "}
         <a
-          href={
-            publication.doi
-              ? `https://doi.org/${publication.doi}`
-              : publication.url
-          }
+          href={`${publication.url}`}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center text-sm font-medium text-amber-600 hover:text-amber-800 transition-colors"
+          className="underline hover:text-amber-800"
         >
-          View {publication.doi ? "DOI" : "article"}
-          <ArrowRight className="ml-1 h-4 w-4" />
+          {publication.doi}
         </a>
-      </div>
+      </span>
+    ) : (
+      // Otherwise fall back to Google Scholar
+      <a
+        href={publication.url}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center text-amber-600 hover:text-amber-800 transition-colors"
+      >
+        View in Google Scholar
+        <ArrowRight className="ml-1 h-4 w-4" />
+      </a>
+    )}
+  </div>
     </div>
   </CardContent>
 </Card>
