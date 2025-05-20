@@ -125,12 +125,12 @@ export default function ContactPage() {
                         <h3 className="font-serif font-medium text-slate-900">Google Scholar</h3>
                         <p className="text-sm text-slate-600">
                           <a
-                            href="https://scholar.google.pt/citations"
+                            href="https://scholar.google.com/citations?user=fNJsrScAAAAJ"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:text-rose-600 transition-colors"
                           >
-                            scholar.google.pt/citations
+                            scholar.google.pt/patricia-mota
                           </a>
                         </p>
                       </div>
