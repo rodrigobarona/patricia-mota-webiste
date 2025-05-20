@@ -416,7 +416,7 @@ export default function PublicationsPage() {
     "authors": "P Pessoa, A Carvalho, P Mota",
     "journal": "Neurourology and Urodynamics",
     "year": "2024",
-    "citationCount": 1,
+    "citationCount": 2,
     "doi": "10.1002/nau.25529",
     "url": "https://doi.org/10.1002/nau.25529",
     "type": "journal"
