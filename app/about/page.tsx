@@ -44,7 +44,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="relative h-[500px] w-[400px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
+                <div className="relative w-full max-w-[400px] aspect-[4/5] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
                   <Image
                     src="/patricia-mota-pt-phd-profile.webp?height=1000&width=800"
                     alt="Patricia Mota"
