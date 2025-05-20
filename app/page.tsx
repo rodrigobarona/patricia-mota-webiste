@@ -159,7 +159,7 @@ export default function Home() {
               <div className="relative">
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                   <Image
-                    src="https://sjc.microlink.io/mkVnmWFhHqkfQy1JEk0tYfaInYAKVzQRjhdkL-RADpbzjvdfKi4_7SHw8GXvhAAP7Sy62oZ7PxjYloe7GbPaLw.jpeg"
+                    src="/eleva-care-home.png"
                     alt="Eleva.care Platform"
                     width={500}
                     height={300}
