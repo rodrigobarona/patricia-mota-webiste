@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={`${playfair.variable} ${inter.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
-            <div className="container flex h-16 items-center px-4 md:px-6">
+            <div className="container flex h-16 items-center px-4 md:px-6 justify-between">
               <Link href="/" className="mr-6 flex items-center space-x-2">
                 <span className="font-serif text-lg font-bold">Patricia Mota, PT, PhD</span>
               </Link>
