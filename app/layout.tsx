@@ -31,7 +31,7 @@ export default function RootLayout({
           <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
             <div className="container flex h-16 items-center px-4 md:px-6 justify-between">
               <Link href="/" className="mr-6 flex items-center space-x-2">
-                <span className="font-serif text-lg font-bold">Patricia Mota, PT, PhD</span>
+                <span className="font-serif text-lg font-bold">Patrícia Mota, PT, PhD</span>
               </Link>
               <nav className="hidden flex-1 justify-center md:flex">
                 <ul className="flex gap-8">
@@ -182,7 +182,7 @@ export default function RootLayout({
           <footer className="w-full border-t bg-white py-8">
             <div className="container flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6">
               <p className="text-center text-sm text-slate-500 md:text-left">
-                &copy; {new Date().getFullYear()} Patricia Mota. All rights reserved.
+                &copy; {new Date().getFullYear()} Patrícia Mota. All rights reserved.
               </p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-end">
                 <a
