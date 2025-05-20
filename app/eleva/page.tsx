@@ -43,7 +43,7 @@ export default function ElevaPage() {
                 </div>
               </div>
               <div className="relative">
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                <div className="relative overflow-hidden rounded-lg shadow-2xl">
                   <Image
                     src="/eleva-care-home.png"
                     alt="Eleva.care Platform"
