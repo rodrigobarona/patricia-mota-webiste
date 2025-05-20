@@ -20,7 +20,7 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="font-serif text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-slate-900">
-                    Patricia Mota, PT, PhD
+                    Patrícia Mota, PT, PhD
                   </h1>
                   <p className="text-slate-600 md:text-xl">
                     Women&apos;s Health Researcher | PhD in Biomechanics | Clinical Gait Researcher | University
@@ -79,6 +79,14 @@ export default function Home() {
                     className="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-800 hover:bg-amber-100 hover:text-amber-800 transition-colors"
                   >
                     ResearchGate
+                  </a>
+         <a
+                    href="https://www.cienciavitae.pt/portal/en/C01F-4E85-4D21"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-800 hover:bg-amber-100 hover:text-amber-800 transition-colors"
+                  >
+                    CiênciaVitae
                   </a>
                   <a
                     href="https://x.com/patimota"
