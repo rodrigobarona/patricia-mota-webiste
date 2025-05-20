@@ -126,8 +126,8 @@ export default function PublicationsPage() {
     "journal": "Current Women's Health Reviews 11 (1), 59–67",
     "year": "2015",
     "citationCount": 55,
-    "doi": "10.2174/1573403X11511010059",
-    "url": "https://doi.org/10.2174/1573403X11511010059",
+    "doi": "10.2174/157340481101150914201735",
+    "url": "https://doi.org/10.2174/157340481101150914201735",
     "type": "journal"
   },
   {
@@ -214,8 +214,8 @@ export default function PublicationsPage() {
     "journal": "Journal of Biomechanics 45, S493",
     "year": "2012",
     "citationCount": 4,
-    "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=14430390167188541743",
+    "doi": "10.1016/S0021-9290(12)70494-3",
+    "url": "https://doi.org/10.1016/S0021-9290(12)70494-3",
     "type": "journal"
   },
   {
@@ -237,7 +237,7 @@ export default function PublicationsPage() {
     "year": "2011",
     "citationCount": 2,
     "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=17166153426739146416",
+    "url": "https://isbweb.org/images/conf/2011/ScientificProgram/ISB2011_ScientificProgram_files/1368.pdf",
     "type": "conference"
   },
   {
@@ -259,12 +259,12 @@ export default function PublicationsPage() {
     "year": "2020",
     "citationCount": 1,
     "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=16773139142481104961",
+    "url": "http://hdl.handle.net/10400.21/12966",
     "type": "book"
   },
   {
     "id": "21",
-    "title": "ULTRASOUND MEASUREMENTS OF THE INTER-RECTUS ABDOMINIS DISTANCE",
+    "title": "Ultrasound Measurements of the Inter-rectus Abdominis Distance",
     "authors": "AG Pascoal, R Chityala, P Mota, F Sancho",
     "journal": "Journal of Biomechanics 45, S460",
     "year": "2012",
@@ -281,7 +281,7 @@ export default function PublicationsPage() {
     "year": "2023",
     "citationCount": 0,
     "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=ULOm3_A8WrAC",
+    "url": "https://doi.org/10.1007/978-3-030-43840-1_21",
     "type": "book"
   },
   {
@@ -302,8 +302,8 @@ export default function PublicationsPage() {
     "journal": "",
     "year": "2023",
     "citationCount": 0,
-    "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=4TOpqqG69KYC",
+    "doi": "10400.21/17682",
+    "url": "http://hdl.handle.net/10400.21/17682",
     "type": "conference"
   },
   {
@@ -313,8 +313,8 @@ export default function PublicationsPage() {
     "journal": "",
     "year": "2022",
     "citationCount": 0,
-    "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=M3ejUd6NZC8C",
+    "doi": "10400.21/15846",
+    "url": "http://hdl.handle.net/10400.21/15846",
     "type": "conference"
   },
   {
@@ -324,8 +324,8 @@ export default function PublicationsPage() {
     "journal": "",
     "year": "2021",
     "citationCount": 0,
-    "doi": "",
-    "url": "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=_kc_bZDykSQC",
+    "doi": "10400.21/17683",
+    "url": "http://hdl.handle.net/10400.21/17683",
     "type": "journal"
   },
   {
@@ -357,8 +357,8 @@ export default function PublicationsPage() {
     "journal": "PQDT-Global",
     "year": "2014",
     "citationCount": 0,
-    "doi": "10.2519/JOSPT.2012.4115",
-    "url": "https://doi.org/10.2519/JOSPT.2012.4115",
+    "doi": "10400.5/8347",
+    "url": "http://hdl.handle.net/10400.5/8347",
     "type": "book"
   },
   {
