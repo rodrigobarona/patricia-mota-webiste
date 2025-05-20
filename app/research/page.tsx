@@ -139,10 +139,10 @@ export default function ResearchPage() {
                         <div className="flex items-center gap-2 pt-2">
                           <BookOpen className="h-4 w-4 text-amber-600" />
                           <a
-                            href="#"
+                            href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/nau.25180"
                             className="text-sm text-amber-600 hover:text-amber-800 transition-colors hover:underline"
                           >
-                            View on Google Scholar
+                            Read publication
                           </a>
                         </div>
                       </div>
@@ -172,10 +172,10 @@ export default function ResearchPage() {
                         <div className="flex items-center gap-2 pt-2">
                           <BookOpen className="h-4 w-4 text-rose-600" />
                           <a
-                            href="#"
+                            href="https://repositorio.ulisboa.pt/bitstream/10400.5/8347/1/Manuscript.pdf"
                             className="text-sm text-rose-600 hover:text-rose-800 transition-colors hover:underline"
                           >
-                            View on Google Scholar
+                            Read publication
                           </a>
                         </div>
                       </div>
@@ -205,10 +205,10 @@ export default function ResearchPage() {
                         <div className="flex items-center gap-2 pt-2">
                           <BookOpen className="h-4 w-4 text-amber-600" />
                           <a
-                            href="#"
+                            href="https://doi.org/10.1016/S0021-9290(12)70494-3"
                             className="text-sm text-amber-600 hover:text-amber-800 transition-colors hover:underline"
                           >
-                            View on Google Scholar
+                            Read publication
                           </a>
                         </div>
                       </div>
