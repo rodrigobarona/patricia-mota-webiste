@@ -378,7 +378,7 @@ export default function PublicationsPage() {
     "venue": "International Society of Biomechanics, Glasgow, 2015",
     "year": "2015",
     "doi": "",
-    "url": "https://mcg.isbweb.org/isb-2015.html",
+    "url": "https://isbweb.org/images/conferences/isb-congresses/2015/isb_2015_programme_book_final.pdf",
     "type": "conference"
   },
   {
