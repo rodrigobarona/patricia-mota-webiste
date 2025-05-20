@@ -413,7 +413,7 @@ export default function PublicationsPage() {
   },{
     "id": "35",
     "title": "Prevalence of levator ani muscle injuries in primiparous women after delivery and their influence on pelvic floor disorders-systematic review",
-    "authors": "Patrícia Pessoa MSc, Andreia Carvalho MSc, Patrícia Mota PhD",
+    "authors": "P Pessoa, A Carvalho, P Mota",
     "journal": "Neurourology and Urodynamics",
     "year": "2024",
     "citationCount": 1,
