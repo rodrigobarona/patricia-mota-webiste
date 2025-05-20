@@ -410,7 +410,17 @@ export default function PublicationsPage() {
     "doi": "",
     "url": "https://isbweb.org/images/conferences/isb-congresses/2013/poster/ps2-17y.pdf",
     "type": "conference"
-  }
+  },{
+    "id": "35",
+    "title": "Prevalence of levator ani muscle injuries in primiparous women after delivery and their influence on pelvic floor disorders-systematic review",
+    "authors": "Patrícia Pessoa MSc, Andreia Carvalho MSc, Patrícia Mota PhD",
+    "journal": "Neurourology and Urodynamics",
+    "year": "2024",
+    "citationCount": 1,
+    "doi": "10.1002/nau.25529",
+    "url": "https://doi.org/10.1002/nau.25529",
+    "type": "journal"
+  },
       ]
 
       setPublications(mockPublications)
