@@ -1,9 +1,35 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, Award, GraduationCap, Languages } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, Award, GraduationCap, Languages } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn about Patricia Mota, PT, PhD - Women's Health Researcher with expertise in biomechanics, pelvic floor function, and postpartum care. PhD from Universidade de Lisboa.",
+  openGraph: {
+    title: "About Patricia Mota, PT, PhD",
+    description:
+      "Women's Health Researcher with expertise in biomechanics, pelvic floor function, and postpartum care.",
+    url: "https://patriciamota.com/about",
+    images: [
+      {
+        url: "/api/og?title=About%20Me&subtitle=Women%27s%20Health%20Researcher%20%26%20Professor",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+};
 
 export default function AboutPage() {
   return (
@@ -22,24 +48,30 @@ export default function AboutPage() {
                     About Me
                   </h1>
                   <p className="text-slate-600 md:text-xl">
-                    Women&apos;s Health Researcher and University Professor with a passion for improving lives through
-                    research and education.
+                    Women&apos;s Health Researcher and University Professor with
+                    a passion for improving lives through research and
+                    education.
                   </p>
                 </div>
                 <div className="space-y-4 text-slate-600">
                   <p>
-                    I am an adjunct professor with a demonstrated history of working in higher education and research.
-                    My expertise spans Women&apos;s Health, Clinical Gait Analysis, and Exercise Physiology.
+                    I am an adjunct professor with a demonstrated history of
+                    working in higher education and research. My expertise spans
+                    Women&apos;s Health, Clinical Gait Analysis, and Exercise
+                    Physiology.
                   </p>
                   <p>
-                    With a PhD in Biomechanics from Universidade de Lisboa in collaboration with Norwegian School of
-                    Sport Sciences, I have dedicated my career to understanding and improving women&apos;s health,
-                    particularly in the areas of pelvic floor muscle function and abdominal wall adaptations during
+                    With a PhD in Biomechanics from Universidade de Lisboa in
+                    collaboration with Norwegian School of Sport Sciences, I
+                    have dedicated my career to understanding and improving
+                    women&apos;s health, particularly in the areas of pelvic
+                    floor muscle function and abdominal wall adaptations during
                     pregnancy.
                   </p>
                   <p>
-                    Currently, I serve as a Visiting Researcher and Professor at California State University, Long
-                    Beach, where I continue my research and teaching in physiotherapy and biomechanics.
+                    Currently, I serve as a Visiting Researcher and Professor at
+                    California State University, Long Beach, where I continue my
+                    research and teaching in physiotherapy and biomechanics.
                   </p>
                 </div>
               </div>
@@ -68,7 +100,8 @@ export default function AboutPage() {
                   Academic Background
                 </h2>
                 <p className="max-w-[900px] text-slate-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  My academic journey and professional development have equipped me with a diverse skill set.
+                  My academic journey and professional development have equipped
+                  me with a diverse skill set.
                 </p>
               </div>
             </div>
@@ -83,20 +116,36 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2 border-l-2 border-amber-200 pl-4">
-                    <h3 className="font-serif font-bold text-slate-900">Doctor of Philosophy (PhD) in Biomechanics</h3>
-                    <p className="text-sm text-slate-600">Faculdade de Motricidade Humana, 2010-2014</p>
+                    <h3 className="font-serif font-bold text-slate-900">
+                      Doctor of Philosophy (PhD) in Biomechanics
+                    </h3>
+                    <p className="text-sm text-slate-600">
+                      Faculdade de Motricidade Humana, 2010-2014
+                    </p>
                   </div>
                   <div className="space-y-2 border-l-2 border-amber-200 pl-4">
-                    <h3 className="font-serif font-bold text-slate-900">C.O. Degree in Osteopathy</h3>
-                    <p className="text-sm text-slate-600">Escuela Osteopatía de Madrid EOM, 2006-2012</p>
+                    <h3 className="font-serif font-bold text-slate-900">
+                      C.O. Degree in Osteopathy
+                    </h3>
+                    <p className="text-sm text-slate-600">
+                      Escuela Osteopatía de Madrid EOM, 2006-2012
+                    </p>
                   </div>
                   <div className="space-y-2 border-l-2 border-amber-200 pl-4">
-                    <h3 className="font-serif font-bold text-slate-900">Leduc Lymphatic Drainage Certificate</h3>
-                    <p className="text-sm text-slate-600">Université libre de Bruxelles, 2007</p>
+                    <h3 className="font-serif font-bold text-slate-900">
+                      Leduc Lymphatic Drainage Certificate
+                    </h3>
+                    <p className="text-sm text-slate-600">
+                      Université libre de Bruxelles, 2007
+                    </p>
                   </div>
                   <div className="space-y-2 border-l-2 border-amber-200 pl-4">
-                    <h3 className="font-serif font-bold text-slate-900">Physiotherapist</h3>
-                    <p className="text-sm text-slate-600">Instituto Politécnico de Lisboa, 2001-2005</p>
+                    <h3 className="font-serif font-bold text-slate-900">
+                      Physiotherapist
+                    </h3>
+                    <p className="text-sm text-slate-600">
+                      Instituto Politécnico de Lisboa, 2001-2005
+                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -106,31 +155,46 @@ export default function AboutPage() {
                     <Award className="h-5 w-5 text-rose-600" />
                     Skills & Expertise
                   </CardTitle>
-                  <CardDescription>My professional competencies</CardDescription>
+                  <CardDescription>
+                    My professional competencies
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2 border-l-2 border-rose-200 pl-4">
-                    <h3 className="font-serif font-bold text-slate-900">Research Expertise</h3>
+                    <h3 className="font-serif font-bold text-slate-900">
+                      Research Expertise
+                    </h3>
                     <p className="text-sm text-slate-600">
-                      Women&apos;s Health, Biomechanics, Clinical Gait Analysis, Exercise Physiology
+                      Women&apos;s Health, Biomechanics, Clinical Gait Analysis,
+                      Exercise Physiology
                     </p>
                   </div>
                   <div className="space-y-2 border-l-2 border-rose-200 pl-4">
-                    <h3 className="font-serif font-bold text-slate-900">Clinical Skills</h3>
+                    <h3 className="font-serif font-bold text-slate-900">
+                      Clinical Skills
+                    </h3>
                     <p className="text-sm text-slate-600">
-                      Physiotherapy, Osteopathy, Lymphatic Drainage, Rehabilitation
+                      Physiotherapy, Osteopathy, Lymphatic Drainage,
+                      Rehabilitation
                     </p>
                   </div>
                   <div className="space-y-2 border-l-2 border-rose-200 pl-4">
-                    <h3 className="font-serif font-bold text-slate-900">Teaching</h3>
-                    <p className="text-sm text-slate-600">University Teaching, Lecturing, Curriculum Development</p>
+                    <h3 className="font-serif font-bold text-slate-900">
+                      Teaching
+                    </h3>
+                    <p className="text-sm text-slate-600">
+                      University Teaching, Lecturing, Curriculum Development
+                    </p>
                   </div>
                   <div className="space-y-2 border-l-2 border-rose-200 pl-4">
-                    <h3 className="font-serif font-bold text-slate-900">Languages</h3>
+                    <h3 className="font-serif font-bold text-slate-900">
+                      Languages
+                    </h3>
                     <div className="flex items-center gap-2">
                       <Languages className="h-4 w-4 text-slate-600" />
                       <p className="text-sm text-slate-600">
-                        Portuguese (Native), English (Full Professional), Spanish (Full Professional)
+                        Portuguese (Native), English (Full Professional),
+                        Spanish (Full Professional)
                       </p>
                     </div>
                   </div>
@@ -163,8 +227,13 @@ export default function AboutPage() {
                 <CardContent className="p-0">
                   <div className="h-2 bg-gradient-to-r from-amber-400 to-amber-600"></div>
                   <div className="p-6 space-y-2">
-                    <h3 className="font-serif text-xl font-bold text-slate-900">Matching Dissertation Grant</h3>
-                    <p className="text-slate-600">Awarded for exceptional research proposal in women&apos;s health</p>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      Matching Dissertation Grant
+                    </h3>
+                    <p className="text-slate-600">
+                      Awarded for exceptional research proposal in women&apos;s
+                      health
+                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -172,8 +241,12 @@ export default function AboutPage() {
                 <CardContent className="p-0">
                   <div className="h-2 bg-gradient-to-r from-rose-400 to-rose-600"></div>
                   <div className="p-6 space-y-2">
-                    <h3 className="font-serif text-xl font-bold text-slate-900">PhD Studentships</h3>
-                    <p className="text-slate-600">Received funding for doctoral research in biomechanics</p>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      PhD Studentships
+                    </h3>
+                    <p className="text-slate-600">
+                      Received funding for doctoral research in biomechanics
+                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -181,8 +254,13 @@ export default function AboutPage() {
                 <CardContent className="p-0">
                   <div className="h-2 bg-gradient-to-r from-amber-400 to-rose-600"></div>
                   <div className="p-6 space-y-2">
-                    <h3 className="font-serif text-xl font-bold text-slate-900">National Merit Scholarship</h3>
-                    <p className="text-slate-600">Recognized for academic excellence in physiotherapy studies</p>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      National Merit Scholarship
+                    </h3>
+                    <p className="text-slate-600">
+                      Recognized for academic excellence in physiotherapy
+                      studies
+                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -199,5 +277,5 @@ export default function AboutPage() {
         </section>
       </main>
     </div>
-  )
+  );
 }

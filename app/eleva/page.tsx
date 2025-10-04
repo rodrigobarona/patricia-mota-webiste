@@ -1,6 +1,33 @@
-import Image from "next/image"
-import { ArrowRight, Check, ExternalLink, Users, Calendar, Globe } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image";
+import {
+  ArrowRight,
+  Check,
+  ExternalLink,
+  Users,
+  Calendar,
+  Globe,
+} from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Eleva.care",
+  description:
+    "Eleva.care - Redefining women's healthcare. Co-founded by Patricia Mota, connecting individuals with top-tier healthcare professionals specializing in every stage of life.",
+  openGraph: {
+    title: "Eleva.care - Women's Healthcare Platform",
+    description:
+      "Redefining women's healthcare by connecting individuals with top-tier healthcare professionals.",
+    url: "https://patriciamota.com/eleva",
+    images: [
+      {
+        url: "/api/og?title=Eleva.care&subtitle=Redefining%20Women%27s%20Healthcare",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+};
 
 export default function ElevaPage() {
   return (
@@ -16,19 +43,23 @@ export default function ElevaPage() {
               <div className="space-y-4">
                 <div className="inline-flex items-center gap-2">
                   <div className="h-10 w-10 rounded-full bg-emerald-600 flex items-center justify-center">
-                    <span className="font-serif text-xl font-bold text-white">E</span>
+                    <span className="font-serif text-xl font-bold text-white">
+                      E
+                    </span>
                   </div>
                   <h1 className="font-serif text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
                     Eleva.care
                   </h1>
                 </div>
                 <p className="text-slate-300 md:text-xl max-w-[600px]">
-                  Where world-class healthcare meets personalized care, empowering every woman at every stage of her
-                  life.
+                  Where world-class healthcare meets personalized care,
+                  empowering every woman at every stage of her life.
                 </p>
                 <p className="text-slate-300">
-                  Founded in 2025 by Patricia Mota, PT, PhD, Eleva.care is redefining women&apos;s healthcare by
-                  creating a dynamic platform that connects individuals with top-tier healthcare professionals.
+                  Founded in 2025 by Patricia Mota, PT, PhD, Eleva.care is
+                  redefining women&apos;s healthcare by creating a dynamic
+                  platform that connects individuals with top-tier healthcare
+                  professionals.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 pt-2">
                   <a
@@ -68,8 +99,8 @@ export default function ElevaPage() {
                   Redefining Women&apos;s Healthcare
                 </h2>
                 <p className="max-w-[900px] text-slate-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  At Eleva Care, we are committed to breaking down barriers and ensuring every woman receives the
-                  attention she deserves.
+                  At Eleva Care, we are committed to breaking down barriers and
+                  ensuring every woman receives the attention she deserves.
                 </p>
               </div>
             </div>
@@ -81,22 +112,31 @@ export default function ElevaPage() {
                     <div className="h-12 w-12 rounded-full bg-emerald-100 flex items-center justify-center">
                       <Users className="h-6 w-6 text-emerald-600" />
                     </div>
-                    <h3 className="font-serif text-xl font-bold text-slate-900">Expert-Led Care</h3>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      Expert-Led Care
+                    </h3>
                     <p className="text-slate-600">
-                      Connect with top-tier healthcare professionals specializing in every stage of a woman&apos;s life.
+                      Connect with top-tier healthcare professionals
+                      specializing in every stage of a woman&apos;s life.
                     </p>
                     <ul className="space-y-2">
                       <li className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-emerald-600 mt-0.5" />
-                        <span className="text-slate-600">Personalized consultations</span>
+                        <span className="text-slate-600">
+                          Personalized consultations
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-emerald-600 mt-0.5" />
-                        <span className="text-slate-600">Evidence-based approaches</span>
+                        <span className="text-slate-600">
+                          Evidence-based approaches
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-emerald-600 mt-0.5" />
-                        <span className="text-slate-600">Specialized expertise</span>
+                        <span className="text-slate-600">
+                          Specialized expertise
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -109,22 +149,31 @@ export default function ElevaPage() {
                     <div className="h-12 w-12 rounded-full bg-emerald-100 flex items-center justify-center">
                       <Calendar className="h-6 w-6 text-emerald-600" />
                     </div>
-                    <h3 className="font-serif text-xl font-bold text-slate-900">On Your Schedule</h3>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      On Your Schedule
+                    </h3>
                     <p className="text-slate-600">
-                      Our innovative platform harnesses modern technology to streamline your healthcare journey.
+                      Our innovative platform harnesses modern technology to
+                      streamline your healthcare journey.
                     </p>
                     <ul className="space-y-2">
                       <li className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-emerald-600 mt-0.5" />
-                        <span className="text-slate-600">Easy appointment booking</span>
+                        <span className="text-slate-600">
+                          Easy appointment booking
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-emerald-600 mt-0.5" />
-                        <span className="text-slate-600">Flexible telehealth options</span>
+                        <span className="text-slate-600">
+                          Flexible telehealth options
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-emerald-600 mt-0.5" />
-                        <span className="text-slate-600">Personalized care plans</span>
+                        <span className="text-slate-600">
+                          Personalized care plans
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -137,22 +186,31 @@ export default function ElevaPage() {
                     <div className="h-12 w-12 rounded-full bg-emerald-100 flex items-center justify-center">
                       <Globe className="h-6 w-6 text-emerald-600" />
                     </div>
-                    <h3 className="font-serif text-xl font-bold text-slate-900">Global Reach</h3>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      Global Reach
+                    </h3>
                     <p className="text-slate-600">
-                      We empower women globally by offering flexible telehealth opportunities with experts worldwide.
+                      We empower women globally by offering flexible telehealth
+                      opportunities with experts worldwide.
                     </p>
                     <ul className="space-y-2">
                       <li className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-emerald-600 mt-0.5" />
-                        <span className="text-slate-600">Remote consultations</span>
+                        <span className="text-slate-600">
+                          Remote consultations
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-emerald-600 mt-0.5" />
-                        <span className="text-slate-600">International expertise</span>
+                        <span className="text-slate-600">
+                          International expertise
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-emerald-600 mt-0.5" />
-                        <span className="text-slate-600">Multilingual support</span>
+                        <span className="text-slate-600">
+                          Multilingual support
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -177,16 +235,20 @@ export default function ElevaPage() {
                   Comprehensive Women&apos;s Health
                 </h2>
                 <p className="max-w-[900px] text-slate-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  From prenatal support and postpartum guidance to specialized treatments in pelvic health and chronic
-                  conditions.
+                  From prenatal support and postpartum guidance to specialized
+                  treatments in pelvic health and chronic conditions.
                 </p>
               </div>
             </div>
             <div className="mx-auto max-w-5xl py-12">
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <div className="rounded-xl bg-white p-6 shadow-lg hover:shadow-xl transition-all">
-                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">Pregnancy & Postpartum</h3>
-                  <p className="text-slate-600 mb-4">Comprehensive care for expectant and new mothers.</p>
+                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">
+                    Pregnancy & Postpartum
+                  </h3>
+                  <p className="text-slate-600 mb-4">
+                    Comprehensive care for expectant and new mothers.
+                  </p>
                   <ul className="space-y-1">
                     <li className="flex items-center gap-2 text-sm text-slate-600">
                       <Check className="h-4 w-4 text-emerald-600" />
@@ -203,8 +265,12 @@ export default function ElevaPage() {
                   </ul>
                 </div>
                 <div className="rounded-xl bg-white p-6 shadow-lg hover:shadow-xl transition-all">
-                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">Pelvic Health</h3>
-                  <p className="text-slate-600 mb-4">Specialized care for pelvic floor disorders.</p>
+                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">
+                    Pelvic Health
+                  </h3>
+                  <p className="text-slate-600 mb-4">
+                    Specialized care for pelvic floor disorders.
+                  </p>
                   <ul className="space-y-1">
                     <li className="flex items-center gap-2 text-sm text-slate-600">
                       <Check className="h-4 w-4 text-emerald-600" />
@@ -221,8 +287,12 @@ export default function ElevaPage() {
                   </ul>
                 </div>
                 <div className="rounded-xl bg-white p-6 shadow-lg hover:shadow-xl transition-all">
-                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">Menopause Care</h3>
-                  <p className="text-slate-600 mb-4">Support through perimenopause and beyond.</p>
+                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">
+                    Menopause Care
+                  </h3>
+                  <p className="text-slate-600 mb-4">
+                    Support through perimenopause and beyond.
+                  </p>
                   <ul className="space-y-1">
                     <li className="flex items-center gap-2 text-sm text-slate-600">
                       <Check className="h-4 w-4 text-emerald-600" />
@@ -239,8 +309,12 @@ export default function ElevaPage() {
                   </ul>
                 </div>
                 <div className="rounded-xl bg-white p-6 shadow-lg hover:shadow-xl transition-all">
-                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">Sexual Health</h3>
-                  <p className="text-slate-600 mb-4">Confidential care for sexual health concerns.</p>
+                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">
+                    Sexual Health
+                  </h3>
+                  <p className="text-slate-600 mb-4">
+                    Confidential care for sexual health concerns.
+                  </p>
                   <ul className="space-y-1">
                     <li className="flex items-center gap-2 text-sm text-slate-600">
                       <Check className="h-4 w-4 text-emerald-600" />
@@ -257,8 +331,12 @@ export default function ElevaPage() {
                   </ul>
                 </div>
                 <div className="rounded-xl bg-white p-6 shadow-lg hover:shadow-xl transition-all">
-                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">Chronic Conditions</h3>
-                  <p className="text-slate-600 mb-4">Management of women-specific chronic issues.</p>
+                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">
+                    Chronic Conditions
+                  </h3>
+                  <p className="text-slate-600 mb-4">
+                    Management of women-specific chronic issues.
+                  </p>
                   <ul className="space-y-1">
                     <li className="flex items-center gap-2 text-sm text-slate-600">
                       <Check className="h-4 w-4 text-emerald-600" />
@@ -275,8 +353,12 @@ export default function ElevaPage() {
                   </ul>
                 </div>
                 <div className="rounded-xl bg-white p-6 shadow-lg hover:shadow-xl transition-all">
-                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">Preventive Care</h3>
-                  <p className="text-slate-600 mb-4">Proactive health maintenance and screening.</p>
+                  <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">
+                    Preventive Care
+                  </h3>
+                  <p className="text-slate-600 mb-4">
+                    Proactive health maintenance and screening.
+                  </p>
                   <ul className="space-y-1">
                     <li className="flex items-center gap-2 text-sm text-slate-600">
                       <Check className="h-4 w-4 text-emerald-600" />
@@ -316,8 +398,9 @@ export default function ElevaPage() {
                   Join Our Mission
                 </h2>
                 <p className="mx-auto max-w-[700px] text-slate-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Join us on this journey as we empower women to take control of their well-being, transforming
-                  healthcare into an experience that is as personalized as it is impactful.
+                  Join us on this journey as we empower women to take control of
+                  their well-being, transforming healthcare into an experience
+                  that is as personalized as it is impactful.
                 </p>
               </div>
             </div>
@@ -329,8 +412,9 @@ export default function ElevaPage() {
                   </div>
                   <h3 className="font-serif text-xl font-bold">For Patients</h3>
                   <p className="text-slate-300">
-                    Access personalized care from top-rated women's health professionals worldwide. Book appointments,
-                    manage your wellness, and take control of your health journey.
+                    Access personalized care from top-rated women's health
+                    professionals worldwide. Book appointments, manage your
+                    wellness, and take control of your health journey.
                   </p>
                   <a
                     href="https://eleva.care"
@@ -346,10 +430,13 @@ export default function ElevaPage() {
                   <div className="h-16 w-16 rounded-full bg-emerald-600 flex items-center justify-center">
                     <Calendar className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="font-serif text-xl font-bold">For Providers</h3>
+                  <h3 className="font-serif text-xl font-bold">
+                    For Providers
+                  </h3>
                   <p className="text-slate-300">
-                    Join our network of women's health experts. Offer flexible telehealth services, choose your own
-                    schedule, and be part of revolutionizing women's healthcare.
+                    Join our network of women's health experts. Offer flexible
+                    telehealth services, choose your own schedule, and be part
+                    of revolutionizing women's healthcare.
                   </p>
                   <a
                     href="https://eleva.care"
@@ -367,5 +454,5 @@ export default function ElevaPage() {
         </section>
       </main>
     </div>
-  )
+  );
 }

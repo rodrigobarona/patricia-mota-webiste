@@ -1,28 +1,99 @@
-import type React from "react"
-import { Playfair_Display, Inter } from "next/font/google"
-import Link from "next/link"
-import { BookOpen, Instagram, Linkedin, Menu, Twitter } from "lucide-react"
+import type React from "react";
+import { Playfair_Display, Inter } from "next/font/google";
+import Link from "next/link";
+import { BookOpen, Instagram, Linkedin, Menu, Twitter } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { ThemeProvider } from "@/components/theme-provider"
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { ThemeProvider } from "@/components/theme-provider";
 
-import "./globals.css"
+import "./globals.css";
 
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" })
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
-  title: "Patricia Mota, PT, PhD - Women's Health Researcher & Eleva.care CEO",
+  metadataBase: new URL("https://patriciamota.com"),
+  title: {
+    default:
+      "Patricia Mota, PT, PhD - Women's Health Researcher & Eleva.care CEO",
+    template: "%s | Patricia Mota, PT, PhD",
+  },
   description:
     "Personal website of Patricia Mota, Women's Health Researcher, PhD in Biomechanics, University Professor, and Co-founder & CEO of Eleva.care.",
-    generator: 'v0.dev'
-}
+  keywords: [
+    "Patricia Mota",
+    "Women's Health",
+    "Biomechanics",
+    "Pelvic Floor",
+    "Diastasis Recti",
+    "Clinical Gait Analysis",
+    "Postpartum Research",
+    "Physiotherapy",
+    "Eleva.care",
+    "Pregnancy Research",
+    "Abdominal Wall",
+    "Physical Therapy Research",
+  ],
+  authors: [{ name: "Patricia Mota", url: "https://patriciamota.com" }],
+  creator: "Patricia Mota, PT, PhD",
+  publisher: "Patricia Mota",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://patriciamota.com",
+    title:
+      "Patricia Mota, PT, PhD - Women's Health Researcher & Eleva.care CEO",
+    description:
+      "Women's Health Researcher, PhD in Biomechanics, University Professor, and Co-founder & CEO of Eleva.care.",
+    siteName: "Patricia Mota, PT, PhD",
+    images: [
+      {
+        url: "/api/og",
+        width: 1200,
+        height: 630,
+        alt: "Patricia Mota, PT, PhD - Women's Health Researcher",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Patricia Mota, PT, PhD - Women's Health Researcher & Eleva.care CEO",
+    description:
+      "Women's Health Researcher, PhD in Biomechanics, University Professor, and Co-founder & CEO of Eleva.care.",
+    creator: "@patimota",
+    images: ["/api/og"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://patriciamota.com",
+  },
+  generator: "v0.dev",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -31,68 +102,123 @@ export default function RootLayout({
           <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
             <div className="container flex h-16 items-center px-4 md:px-6 justify-between">
               <Link href="/" className="mr-6 flex items-center space-x-2">
-                <span className="font-serif text-lg font-bold">Patrícia Mota, PT, PhD</span>
+                <span className="font-serif text-lg font-bold">
+                  Patrícia Mota, PT, PhD
+                </span>
               </Link>
               <nav className="hidden flex-1 justify-center md:flex">
                 <ul className="flex gap-8">
                   <li>
-                    <Link href="/" className="text-sm font-medium hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/"
+                      className="text-sm font-medium hover:text-amber-600 transition-colors"
+                    >
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about" className="text-sm font-medium hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/about"
+                      className="text-sm font-medium hover:text-amber-600 transition-colors"
+                    >
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link href="/research" className="text-sm font-medium hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/research"
+                      className="text-sm font-medium hover:text-amber-600 transition-colors"
+                    >
                       Research
                     </Link>
                   </li>
                   <li>
-                    <Link href="/publications" className="text-sm font-medium hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/publications"
+                      className="text-sm font-medium hover:text-amber-600 transition-colors"
+                    >
                       Publications
                     </Link>
                   </li>
                   <li>
-                    <Link href="/teaching" className="text-sm font-medium hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/teaching"
+                      className="text-sm font-medium hover:text-amber-600 transition-colors"
+                    >
                       Teaching
                     </Link>
                   </li>
                   <li>
-                    <Link href="/eleva" className="text-sm font-medium hover:text-emerald-600 transition-colors">
+                    <Link
+                      href="/eleva"
+                      className="text-sm font-medium hover:text-emerald-600 transition-colors"
+                    >
                       Eleva.care
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact" className="text-sm font-medium hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/contact"
+                      className="text-sm font-medium hover:text-amber-600 transition-colors"
+                    >
                       Contact
                     </Link>
                   </li>
                 </ul>
               </nav>
               <div className="hidden md:flex md:flex-1 md:justify-end md:space-x-2">
-                <a href="https://www.linkedin.com/in/patimota" target="_blank" rel="noreferrer">
-                  <Button variant="ghost" size="icon" className="rounded-full hover:bg-amber-100 hover:text-amber-600">
+                <a
+                  href="https://www.linkedin.com/in/patimota"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="rounded-full hover:bg-amber-100 hover:text-amber-600"
+                  >
                     <Linkedin className="h-5 w-5" />
                     <span className="sr-only">LinkedIn</span>
                   </Button>
                 </a>
-                <a href="https://scholar.google.pt/citations?user=fNJsrScAAAAJ" target="_blank" rel="noreferrer">
-                  <Button variant="ghost" size="icon" className="rounded-full hover:bg-amber-100 hover:text-amber-600">
+                <a
+                  href="https://scholar.google.pt/citations?user=fNJsrScAAAAJ"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="rounded-full hover:bg-amber-100 hover:text-amber-600"
+                  >
                     <BookOpen className="h-5 w-5" />
                     <span className="sr-only">Google Scholar</span>
                   </Button>
                 </a>
-                <a href="https://x.com/patimota" target="_blank" rel="noreferrer">
-                  <Button variant="ghost" size="icon" className="rounded-full hover:bg-amber-100 hover:text-amber-600">
+                <a
+                  href="https://x.com/patimota"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="rounded-full hover:bg-amber-100 hover:text-amber-600"
+                  >
                     <Twitter className="h-5 w-5" />
                     <span className="sr-only">Twitter/X</span>
                   </Button>
                 </a>
-                <a href="https://www.instagram.com/patricia_mota_pt_phd/" target="_blank" rel="noreferrer">
-                  <Button variant="ghost" size="icon" className="rounded-full hover:bg-amber-100 hover:text-amber-600">
+                <a
+                  href="https://www.instagram.com/patricia_mota_pt_phd/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="rounded-full hover:bg-amber-100 hover:text-amber-600"
+                  >
                     <Instagram className="h-5 w-5" />
                     <span className="sr-only">Instagram</span>
                   </Button>
@@ -107,32 +233,60 @@ export default function RootLayout({
                 </SheetTrigger>
                 <SheetContent side="left">
                   <nav className="grid gap-6 text-lg font-medium">
-                    <Link href="/" className="flex items-center gap-2 text-lg font-serif font-semibold">
+                    <Link
+                      href="/"
+                      className="flex items-center gap-2 text-lg font-serif font-semibold"
+                    >
                       <span>Patricia Mota, PT, PhD</span>
                     </Link>
-                    <Link href="/" className="hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/"
+                      className="hover:text-amber-600 transition-colors"
+                    >
                       Home
                     </Link>
-                    <Link href="/about" className="hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/about"
+                      className="hover:text-amber-600 transition-colors"
+                    >
                       About
                     </Link>
-                    <Link href="/research" className="hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/research"
+                      className="hover:text-amber-600 transition-colors"
+                    >
                       Research
                     </Link>
-                    <Link href="/publications" className="hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/publications"
+                      className="hover:text-amber-600 transition-colors"
+                    >
                       Publications
                     </Link>
-                    <Link href="/teaching" className="hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/teaching"
+                      className="hover:text-amber-600 transition-colors"
+                    >
                       Teaching
                     </Link>
-                    <Link href="/eleva" className="hover:text-emerald-600 transition-colors">
+                    <Link
+                      href="/eleva"
+                      className="hover:text-emerald-600 transition-colors"
+                    >
                       Eleva.care
                     </Link>
-                    <Link href="/contact" className="hover:text-amber-600 transition-colors">
+                    <Link
+                      href="/contact"
+                      className="hover:text-amber-600 transition-colors"
+                    >
                       Contact
                     </Link>
                     <div className="flex gap-4 mt-6">
-                      <a href="https://www.linkedin.com/in/patimota" target="_blank" rel="noreferrer">
+                      <a
+                        href="https://www.linkedin.com/in/patimota"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button
                           variant="ghost"
                           size="icon"
@@ -142,7 +296,11 @@ export default function RootLayout({
                           <span className="sr-only">LinkedIn</span>
                         </Button>
                       </a>
-                      <a href="https://scholar.google.pt/citations?user=fNJsrScAAAAJ" target="_blank" rel="noreferrer">
+                      <a
+                        href="https://scholar.google.pt/citations?user=fNJsrScAAAAJ"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button
                           variant="ghost"
                           size="icon"
@@ -152,7 +310,11 @@ export default function RootLayout({
                           <span className="sr-only">Google Scholar</span>
                         </Button>
                       </a>
-                      <a href="https://x.com/patimota" target="_blank" rel="noreferrer">
+                      <a
+                        href="https://x.com/patimota"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button
                           variant="ghost"
                           size="icon"
@@ -162,7 +324,11 @@ export default function RootLayout({
                           <span className="sr-only">Twitter/X</span>
                         </Button>
                       </a>
-                      <a href="https://www.instagram.com/patricia_mota_pt_phd/" target="_blank" rel="noreferrer">
+                      <a
+                        href="https://www.instagram.com/patricia_mota_pt_phd/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button
                           variant="ghost"
                           size="icon"
@@ -182,7 +348,8 @@ export default function RootLayout({
           <footer className="w-full border-t bg-white py-8">
             <div className="container flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6">
               <p className="text-center text-sm text-slate-500 md:text-left">
-                &copy; {new Date().getFullYear()} Patrícia Mota. All rights reserved.
+                &copy; {new Date().getFullYear()} Patrícia Mota. All rights
+                reserved.
               </p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-end">
                 <a
@@ -229,5 +396,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

@@ -1,16 +1,22 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { BookOpen, Linkedin, Mail, MapPin, Send } from "lucide-react"
+import { useState } from "react";
+import { BookOpen, Linkedin, Mail, MapPin, Send } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { toast } from "@/components/ui/use-toast"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { toast } from "@/components/ui/use-toast";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -18,28 +24,30 @@ export default function ContactPage() {
     email: "",
     subject: "",
     message: "",
-  })
+  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // In a real application, you would send the form data to a server
-    console.log("Form submitted:", formData)
+    console.log("Form submitted:", formData);
     toast({
       title: "Message Sent",
       description: "Thank you for your message. I will get back to you soon.",
-    })
+    });
     setFormData({
       name: "",
       email: "",
       subject: "",
       message: "",
-    })
-  }
+    });
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -59,7 +67,8 @@ export default function ContactPage() {
                   Get in Touch
                 </h1>
                 <p className="text-slate-600 md:text-xl max-w-[800px] mx-auto">
-                  Reach out for research collaborations, speaking engagements, or academic inquiries.
+                  Reach out for research collaborations, speaking engagements,
+                  or academic inquiries.
                 </p>
               </div>
             </div>
@@ -72,7 +81,9 @@ export default function ContactPage() {
                 <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardHeader className="pb-2">
                     <div className="h-2 bg-gradient-to-r from-amber-400 to-rose-600 -mt-6 -mx-6 mb-4"></div>
-                    <CardTitle className="font-serif text-slate-900">Contact Information</CardTitle>
+                    <CardTitle className="font-serif text-slate-900">
+                      Contact Information
+                    </CardTitle>
                     <CardDescription>Ways to reach me directly</CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-6">
@@ -81,9 +92,14 @@ export default function ContactPage() {
                         <Mail className="h-5 w-5" />
                       </div>
                       <div>
-                        <h3 className="font-serif font-medium text-slate-900">Email</h3>
+                        <h3 className="font-serif font-medium text-slate-900">
+                          Email
+                        </h3>
                         <p className="text-sm text-slate-600">
-                          <a href="mailto:patimota@gmail.com" className="hover:text-amber-600 transition-colors">
+                          <a
+                            href="mailto:patimota@gmail.com"
+                            className="hover:text-amber-600 transition-colors"
+                          >
                             patimota@gmail.com
                           </a>
                         </p>
@@ -94,9 +110,15 @@ export default function ContactPage() {
                         <MapPin className="h-5 w-5" />
                       </div>
                       <div>
-                        <h3 className="font-serif font-medium text-slate-900">Location</h3>
-                        <p className="text-sm text-slate-600">California State University, Long Beach</p>
-                        <p className="text-sm text-slate-600">Los Angeles, California, United States</p>
+                        <h3 className="font-serif font-medium text-slate-900">
+                          Location
+                        </h3>
+                        <p className="text-sm text-slate-600">
+                          California State University, Long Beach
+                        </p>
+                        <p className="text-sm text-slate-600">
+                          Los Angeles, California, United States
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -104,7 +126,9 @@ export default function ContactPage() {
                         <Linkedin className="h-5 w-5" />
                       </div>
                       <div>
-                        <h3 className="font-serif font-medium text-slate-900">LinkedIn</h3>
+                        <h3 className="font-serif font-medium text-slate-900">
+                          LinkedIn
+                        </h3>
                         <p className="text-sm text-slate-600">
                           <a
                             href="https://www.linkedin.com/in/patimota"
@@ -122,7 +146,9 @@ export default function ContactPage() {
                         <BookOpen className="h-5 w-5" />
                       </div>
                       <div>
-                        <h3 className="font-serif font-medium text-slate-900">Google Scholar</h3>
+                        <h3 className="font-serif font-medium text-slate-900">
+                          Google Scholar
+                        </h3>
                         <p className="text-sm text-slate-600">
                           <a
                             href="https://scholar.google.com/citations?user=fNJsrScAAAAJ"
@@ -142,8 +168,12 @@ export default function ContactPage() {
                 <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardHeader className="pb-2">
                     <div className="h-2 bg-gradient-to-r from-amber-400 to-rose-600 -mt-6 -mx-6 mb-4"></div>
-                    <CardTitle className="font-serif text-slate-900">Send a Message</CardTitle>
-                    <CardDescription>Fill out the form below to get in touch</CardDescription>
+                    <CardTitle className="font-serif text-slate-900">
+                      Send a Message
+                    </CardTitle>
+                    <CardDescription>
+                      Fill out the form below to get in touch
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <form onSubmit={handleSubmit} className="space-y-4">
@@ -220,5 +250,5 @@ export default function ContactPage() {
         </section>
       </main>
     </div>
-  )
+  );
 }

@@ -1,14 +1,83 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, FileText, Mail, MapPin, ExternalLink } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, FileText, Mail, MapPin, ExternalLink } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Patrícia Mota",
+    alternateName: "Patricia Mota, PT, PhD",
+    jobTitle: "Women's Health Researcher, University Professor, CEO",
+    url: "https://patriciamota.com",
+    image: "https://patriciamota.com/patricia-mota-pt-phd-profile.webp",
+    sameAs: [
+      "https://www.linkedin.com/in/patimota",
+      "https://scholar.google.pt/citations?user=fNJsrScAAAAJ",
+      "https://www.researchgate.net/profile/Patricia-Mota-4",
+      "https://x.com/patimota",
+      "https://www.instagram.com/patricia_mota_pt_phd/",
+      "https://www.cienciavitae.pt/portal/en/C01F-4E85-4D21",
+    ],
+    email: "patimota@gmail.com",
+    worksFor: [
+      {
+        "@type": "Organization",
+        name: "California State University, Long Beach",
+        url: "https://www.csulb.edu/",
+      },
+      {
+        "@type": "Organization",
+        name: "Eleva.care",
+        url: "https://eleva.care",
+      },
+      {
+        "@type": "Organization",
+        name: "Escola Superior de Tecnologia da Saúde de Lisboa",
+        url: "https://www.estesl.ipl.pt/",
+      },
+    ],
+    alumniOf: [
+      {
+        "@type": "EducationalOrganization",
+        name: "Universidade de Lisboa",
+        url: "https://www.ulisboa.pt/",
+      },
+      {
+        "@type": "EducationalOrganization",
+        name: "Norwegian School of Sport Sciences",
+        url: "https://www.nih.no/en/",
+      },
+    ],
+    knowsAbout: [
+      "Women's Health",
+      "Biomechanics",
+      "Clinical Gait Analysis",
+      "Pelvic Floor",
+      "Diastasis Recti",
+      "Physiotherapy",
+      "Postpartum Care",
+      "Pregnancy",
+      "Exercise Physiology",
+    ],
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Los Angeles",
+      addressRegion: "CA",
+      addressCountry: "US",
+    },
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-rose-50 to-white relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full">
@@ -23,8 +92,9 @@ export default function Home() {
                     Patrícia Mota, PT, PhD
                   </h1>
                   <p className="text-slate-600 md:text-xl">
-                    Women&apos;s Health Researcher | PhD in Biomechanics | Clinical Gait Researcher | University
-                    Professor | Co-founder & CEO of Eleva.care
+                    Women&apos;s Health Researcher | PhD in Biomechanics |
+                    Clinical Gait Researcher | University Professor | Co-founder
+                    & CEO of Eleva.care
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -50,7 +120,10 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-1">
                     <Mail className="h-4 w-4" />
-                    <a href="mailto:patimota@gmail.com" className="hover:text-amber-600 transition-colors">
+                    <a
+                      href="mailto:patimota@gmail.com"
+                      className="hover:text-amber-600 transition-colors"
+                    >
                       patimota@gmail.com
                     </a>
                   </div>
@@ -80,7 +153,7 @@ export default function Home() {
                   >
                     ResearchGate
                   </a>
-         <a
+                  <a
                     href="https://www.cienciavitae.pt/portal/en/C01F-4E85-4D21"
                     target="_blank"
                     rel="noreferrer"
@@ -136,12 +209,16 @@ export default function Home() {
                   Co-founder & CEO
                 </h2>
                 <p className="text-slate-300 md:text-xl max-w-[600px]">
-                  At Eleva Care, we are redefining women&apos;s healthcare by creating a dynamic platform that connects
-                  individuals with top-tier healthcare professionals specializing in every stage of life.
+                  At Eleva Care, we are redefining women&apos;s healthcare by
+                  creating a dynamic platform that connects individuals with
+                  top-tier healthcare professionals specializing in every stage
+                  of life.
                 </p>
                 <p className="text-slate-300">
-                  Our innovative platform harnesses modern technology to streamline your healthcare journey, making it
-                  easier than ever to book consultations, access essential information, and manage your wellness.
+                  Our innovative platform harnesses modern technology to
+                  streamline your healthcare journey, making it easier than ever
+                  to book consultations, access essential information, and
+                  manage your wellness.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 pt-2">
                   <a
@@ -193,8 +270,10 @@ export default function Home() {
                   Academic & Research Profile
                 </h2>
                 <p className="max-w-[900px] text-slate-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I am an adjunct professor with a demonstrated history of working in higher education and research. My
-                  expertise spans Women&apos;s Health, Clinical Gait Analysis, and Exercise Physiology.
+                  I am an adjunct professor with a demonstrated history of
+                  working in higher education and research. My expertise spans
+                  Women&apos;s Health, Clinical Gait Analysis, and Exercise
+                  Physiology.
                 </p>
               </div>
             </div>
@@ -203,25 +282,35 @@ export default function Home() {
                 <ul className="grid gap-6">
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="font-serif text-xl font-bold text-slate-900">Education</h3>
+                      <h3 className="font-serif text-xl font-bold text-slate-900">
+                        Education
+                      </h3>
                       <p className="text-slate-600">
-                        PhD in Biomechanics from Universidade de Lisboa in collaboration with Norwegian School of Sport
-                        Sciences
+                        PhD in Biomechanics from Universidade de Lisboa in
+                        collaboration with Norwegian School of Sport Sciences
                       </p>
                     </div>
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="font-serif text-xl font-bold text-slate-900">Current Position</h3>
+                      <h3 className="font-serif text-xl font-bold text-slate-900">
+                        Current Position
+                      </h3>
                       <p className="text-slate-600">
-                        Visiting Researcher and Professor at California State University, Long Beach
+                        Visiting Researcher and Professor at California State
+                        University, Long Beach
                       </p>
                     </div>
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="font-serif text-xl font-bold text-slate-900">Research Focus</h3>
-                      <p className="text-slate-600">Women&apos;s Health, Biomechanics, Clinical Gait Analysis</p>
+                      <h3 className="font-serif text-xl font-bold text-slate-900">
+                        Research Focus
+                      </h3>
+                      <p className="text-slate-600">
+                        Women&apos;s Health, Biomechanics, Clinical Gait
+                        Analysis
+                      </p>
                     </div>
                   </li>
                 </ul>
@@ -230,24 +319,34 @@ export default function Home() {
                 <ul className="grid gap-6">
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="font-serif text-xl font-bold text-slate-900">Languages</h3>
+                      <h3 className="font-serif text-xl font-bold text-slate-900">
+                        Languages
+                      </h3>
                       <p className="text-slate-600">
-                        Portuguese (Native), English (Full Professional), Spanish (Full Professional)
+                        Portuguese (Native), English (Full Professional),
+                        Spanish (Full Professional)
                       </p>
                     </div>
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="font-serif text-xl font-bold text-slate-900">Teaching Experience</h3>
+                      <h3 className="font-serif text-xl font-bold text-slate-900">
+                        Teaching Experience
+                      </h3>
                       <p className="text-slate-600">
-                        Over 10 years of university teaching experience in physiotherapy and biomechanics
+                        Over 10 years of university teaching experience in
+                        physiotherapy and biomechanics
                       </p>
                     </div>
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="font-serif text-xl font-bold text-slate-900">Clinical Experience</h3>
-                      <p className="text-slate-600">Head of Physiotherapy Service at Centro Pré Pós Parto</p>
+                      <h3 className="font-serif text-xl font-bold text-slate-900">
+                        Clinical Experience
+                      </h3>
+                      <p className="text-slate-600">
+                        Head of Physiotherapy Service at Centro Pré Pós Parto
+                      </p>
                     </div>
                   </li>
                 </ul>
@@ -270,8 +369,9 @@ export default function Home() {
                   Featured Publications
                 </h2>
                 <p className="max-w-[900px] text-slate-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  My research focuses on women&apos;s health, particularly on pelvic floor muscle function and abdominal
-                  wall adaptations during pregnancy.
+                  My research focuses on women&apos;s health, particularly on
+                  pelvic floor muscle function and abdominal wall adaptations
+                  during pregnancy.
                 </p>
               </div>
             </div>
@@ -282,13 +382,16 @@ export default function Home() {
                   <div className="p-6">
                     <div className="flex items-center gap-2 text-amber-600">
                       <FileText className="h-4 w-4" />
-                      <span className="text-xs font-medium">Journal Publication</span>
+                      <span className="text-xs font-medium">
+                        Journal Publication
+                      </span>
                     </div>
                     <h3 className="mt-4 font-serif text-lg font-bold text-slate-900">
                       Pelvic floor muscle function after grade II tears
                     </h3>
                     <p className="mt-2 text-sm text-slate-600">
-                      Surface electromyography test–retest and differences between nulliparous and primiparous
+                      Surface electromyography test–retest and differences
+                      between nulliparous and primiparous
                     </p>
                     <Link
                       href="/research"
@@ -306,13 +409,17 @@ export default function Home() {
                   <div className="p-6">
                     <div className="flex items-center gap-2 text-rose-600">
                       <FileText className="h-4 w-4" />
-                      <span className="text-xs font-medium">Journal Publication</span>
+                      <span className="text-xs font-medium">
+                        Journal Publication
+                      </span>
                     </div>
                     <h3 className="mt-4 font-serif text-lg font-bold text-slate-900">
-                      Morphological and functional adaptations of the abdominal wall
+                      Morphological and functional adaptations of the abdominal
+                      wall
                     </h3>
                     <p className="mt-2 text-sm text-slate-600">
-                      Examining changes during pregnancy and in the postpartum period
+                      Examining changes during pregnancy and in the postpartum
+                      period
                     </p>
                     <Link
                       href="/research"
@@ -330,7 +437,9 @@ export default function Home() {
                   <div className="p-6">
                     <div className="flex items-center gap-2 text-amber-600">
                       <FileText className="h-4 w-4" />
-                      <span className="text-xs font-medium">Journal Publication</span>
+                      <span className="text-xs font-medium">
+                        Journal Publication
+                      </span>
                     </div>
                     <h3 className="mt-4 font-serif text-lg font-bold text-slate-900">
                       Ultrasound study on exercise effects
@@ -373,8 +482,9 @@ export default function Home() {
                   Academic & Professional Journey
                 </h2>
                 <p className="max-w-[900px] text-slate-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  My career spans multiple institutions across different countries, focusing on research and education
-                  in physiotherapy.
+                  My career spans multiple institutions across different
+                  countries, focusing on research and education in
+                  physiotherapy.
                 </p>
               </div>
             </div>
@@ -396,49 +506,84 @@ export default function Home() {
                 </TabsList>
                 <TabsContent value="academic" className="mt-8 space-y-6">
                   <div className="space-y-2 border-l-2 border-amber-200 pl-6">
-                    <div className="text-sm text-amber-600 font-medium">2023 - Present</div>
+                    <div className="text-sm text-amber-600 font-medium">
+                      2023 - Present
+                    </div>
                     <h3 className="font-serif text-xl font-bold text-slate-900">
                       California State University, Long Beach
                     </h3>
-                    <p className="text-slate-600">Visiting Researcher and Professor</p>
+                    <p className="text-slate-600">
+                      Visiting Researcher and Professor
+                    </p>
                   </div>
                   <div className="space-y-2 border-l-2 border-amber-200 pl-6">
-                    <div className="text-sm text-amber-600 font-medium">2017 - Present</div>
+                    <div className="text-sm text-amber-600 font-medium">
+                      2017 - Present
+                    </div>
                     <h3 className="font-serif text-xl font-bold text-slate-900">
                       Escola Superior de Tecnologia da Saúde de Lisboa
                     </h3>
                     <p className="text-slate-600">Adjunct Professor</p>
                   </div>
                   <div className="space-y-2 border-l-2 border-amber-200 pl-6">
-                    <div className="text-sm text-amber-600 font-medium">2016 - Present</div>
-                    <h3 className="font-serif text-xl font-bold text-slate-900">University of Lisbon</h3>
+                    <div className="text-sm text-amber-600 font-medium">
+                      2016 - Present
+                    </div>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      University of Lisbon
+                    </h3>
                     <p className="text-slate-600">Researcher</p>
                   </div>
                   <div className="space-y-2 border-l-2 border-amber-200 pl-6">
-                    <div className="text-sm text-amber-600 font-medium">2015 - 2016</div>
-                    <h3 className="font-serif text-xl font-bold text-slate-900">University of Lisbon</h3>
+                    <div className="text-sm text-amber-600 font-medium">
+                      2015 - 2016
+                    </div>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      University of Lisbon
+                    </h3>
                     <p className="text-slate-600">Postdoctoral Researcher</p>
                   </div>
                 </TabsContent>
                 <TabsContent value="professional" className="mt-8 space-y-6">
                   <div className="space-y-2 border-l-2 border-emerald-200 pl-6">
-                    <div className="text-sm text-emerald-600 font-medium">2025 - Present</div>
-                    <h3 className="font-serif text-xl font-bold text-slate-900">Eleva.care</h3>
+                    <div className="text-sm text-emerald-600 font-medium">
+                      2025 - Present
+                    </div>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      Eleva.care
+                    </h3>
                     <p className="text-slate-600">Co-founder & CEO</p>
                   </div>
                   <div className="space-y-2 border-l-2 border-rose-200 pl-6">
-                    <div className="text-sm text-rose-600 font-medium">2011 - Present</div>
-                    <h3 className="font-serif text-xl font-bold text-slate-900">Centro Pré Pós Parto</h3>
-                    <p className="text-slate-600">Head of Physiotherapy Service</p>
+                    <div className="text-sm text-rose-600 font-medium">
+                      2011 - Present
+                    </div>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      Centro Pré Pós Parto
+                    </h3>
+                    <p className="text-slate-600">
+                      Head of Physiotherapy Service
+                    </p>
                   </div>
                   <div className="space-y-2 border-l-2 border-rose-200 pl-6">
-                    <div className="text-sm text-rose-600 font-medium">2007 - 2009</div>
-                    <h3 className="font-serif text-xl font-bold text-slate-900">Patricía Mota | Physiotherapy</h3>
-                    <p className="text-slate-600">Founder - Built a physiotherapy center serving over 200 patients</p>
+                    <div className="text-sm text-rose-600 font-medium">
+                      2007 - 2009
+                    </div>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      Patricía Mota | Physiotherapy
+                    </h3>
+                    <p className="text-slate-600">
+                      Founder - Built a physiotherapy center serving over 200
+                      patients
+                    </p>
                   </div>
                   <div className="space-y-2 border-l-2 border-rose-200 pl-6">
-                    <div className="text-sm text-rose-600 font-medium">2006 - 2009</div>
-                    <h3 className="font-serif text-xl font-bold text-slate-900">Agrupación Clínica</h3>
+                    <div className="text-sm text-rose-600 font-medium">
+                      2006 - 2009
+                    </div>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      Agrupación Clínica
+                    </h3>
                     <p className="text-slate-600">Senior Physiotherapist</p>
                   </div>
                 </TabsContent>
@@ -454,10 +599,12 @@ export default function Home() {
           <div className="container px-4 md:px-6 relative z-10">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="font-serif text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
+                <h2 className="font-serif text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Get in Touch
+                </h2>
                 <p className="mx-auto max-w-[700px] text-slate-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Interested in collaborating on research, speaking engagements, or learning more about Eleva.care? Feel
-                  free to reach out.
+                  Interested in collaborating on research, speaking engagements,
+                  or learning more about Eleva.care? Feel free to reach out.
                 </p>
               </div>
               <div className="mx-auto w-full max-w-sm space-y-2">
@@ -493,5 +640,5 @@ export default function Home() {
         </section>
       </main>
     </div>
-  )
+  );
 }

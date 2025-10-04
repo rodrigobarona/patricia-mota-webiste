@@ -1,0 +1,8 @@
+# robots.txt for patriciamota.com
+
+User-agent: *
+Allow: /
+Allow: /api/og/*
+
+Sitemap: https://patriciamota.com/sitemap.xml
+
