@@ -9,7 +9,7 @@
     "just-between-us-and-science": {
       "routing": [
         {
-          "paths": ["/podcast(.*)"],
+          "paths": ["/podcast", "/podcast/:path*"],
           "fallback": "https://podcast.patriciamota.com"
         }
       ]
