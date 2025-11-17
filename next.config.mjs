@@ -1,3 +1,5 @@
+import { withMicrofrontends } from "@vercel/microfrontends/next/config";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -9,6 +11,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+};
 
-export default nextConfig
+export default withMicrofrontends(nextConfig);
