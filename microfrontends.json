@@ -4,7 +4,7 @@
   "applications": {
     "patricia-mota-website": {
       "development": {
-        "fallback": "https://patriciamota.com"
+        "fallback": "patriciamota.com"
       }
     },
     "just-between-us-and-science": {
