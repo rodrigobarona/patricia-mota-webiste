@@ -1,6 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/microfrontends.json",
-  "group": "patriciamota",
   "applications": {
     "patricia-mota-website": {
       "development": {

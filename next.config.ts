@@ -1,7 +1,7 @@
+import type { NextConfig } from "next";
 import { withMicrofrontends } from "@vercel/microfrontends/next/config";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
