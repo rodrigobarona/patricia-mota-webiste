@@ -10,6 +10,7 @@
     "just-between-us-and-science": {
       "routing": [
         {
+          "group": "podcast",
           "paths": ["/podcast/:path*"]
         }
       ]
