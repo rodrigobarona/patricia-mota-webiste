@@ -7,10 +7,12 @@
       }
     },
     "just-between-us-and-science": {
+      "development": {
+        "fallback": "podcast.patriciamota.com"
+      },
       "routing": [
         {
-          "paths": ["/podcast/:path*"],
-           "entry": "https://podcast.patriciamota.com"
+          "paths": ["/podcast/:path*"]
         }
       ]
     }
