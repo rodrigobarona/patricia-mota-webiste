@@ -1,16 +1,18 @@
 {
   "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "group": "patriciamota", 
   "applications": {
     "patricia-mota-website": {
-      "development": {
-        "fallback": "https://patriciamota.com"
-      }
+      "routing": [
+        {
+          "paths": ["/", "/:path*"]
+        }
+      ]
     },
     "just-between-us-and-science": {
       "routing": [
         {
-          "paths": ["/podcast", "/podcast/:path*"],
-          "fallback": "https://podcast.patriciamota.com"
+          "paths": ["/podcast", "/podcast/:path*"]
         }
       ]
     }
