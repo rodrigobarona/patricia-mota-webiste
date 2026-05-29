@@ -27,18 +27,13 @@ export default function Home() {
     worksFor: [
       {
         "@type": "Organization",
-        name: "California State University, Long Beach",
-        url: "https://www.csulb.edu/",
+        name: "Lisbon School of Health of the Polytechnic University of Lisbon",
+        url: "https://www.estesl.ipl.pt/",
       },
       {
         "@type": "Organization",
         name: "Eleva.care",
         url: "https://eleva.care",
-      },
-      {
-        "@type": "Organization",
-        name: "Escola Superior de Tecnologia da Saúde de Lisboa",
-        url: "https://www.estesl.ipl.pt/",
       },
     ],
     alumniOf: [
@@ -269,10 +264,8 @@ export default function Home() {
                   Academic & Research Profile
                 </h2>
                 <p className="max-w-[900px] text-slate-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I am an adjunct professor with a demonstrated history of
-                  working in higher education and research. My expertise spans
-                  Women&apos;s Health, Clinical Gait Analysis, and Exercise
-                  Physiology.
+                  Women&apos;s Health Researcher and University Professor with
+                  a passion for improving lives through research and education.
                 </p>
               </div>
             </div>
@@ -296,8 +289,9 @@ export default function Home() {
                         Current Position
                       </h3>
                       <p className="text-slate-600">
-                        Visiting Researcher and Professor at California State
-                        University, Long Beach
+                        Adjunct Professor at the Lisbon School of Health of the
+                        Polytechnic University of Lisbon; Co-founder & CEO of
+                        Eleva.care
                       </p>
                     </div>
                   </li>
@@ -344,7 +338,9 @@ export default function Home() {
                         Clinical Experience
                       </h3>
                       <p className="text-slate-600">
-                        Head of Physiotherapy Service at Centro Pré Pós Parto
+                        Online and in-person care through Eleva.care;
+                        collaborating with Clínica Mulher (Lisbon) and Centro
+                        Médico do Cartaxo
                       </p>
                     </div>
                   </li>
@@ -506,23 +502,25 @@ export default function Home() {
                 <TabsContent value="academic" className="mt-8 space-y-6">
                   <div className="space-y-2 border-l-2 border-amber-200 pl-6">
                     <div className="text-sm text-amber-600 font-medium">
-                      2023 - Present
+                      2017 - Present
+                    </div>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      Lisbon School of Health of the Polytechnic University of
+                      Lisbon
+                    </h3>
+                    <p className="text-slate-600">Adjunct Professor</p>
+                  </div>
+                  <div className="space-y-2 border-l-2 border-amber-200 pl-6">
+                    <div className="text-sm text-amber-600 font-medium">
+                      2023 - 2025
                     </div>
                     <h3 className="font-serif text-xl font-bold text-slate-900">
                       California State University, Long Beach
                     </h3>
                     <p className="text-slate-600">
-                      Visiting Researcher and Professor
+                      Visiting Researcher and Professor — ongoing collaboration
+                      on data processing and publications
                     </p>
-                  </div>
-                  <div className="space-y-2 border-l-2 border-amber-200 pl-6">
-                    <div className="text-sm text-amber-600 font-medium">
-                      2017 - Present
-                    </div>
-                    <h3 className="font-serif text-xl font-bold text-slate-900">
-                      Escola Superior de Tecnologia da Saúde de Lisboa
-                    </h3>
-                    <p className="text-slate-600">Adjunct Professor</p>
                   </div>
                   <div className="space-y-2 border-l-2 border-amber-200 pl-6">
                     <div className="text-sm text-amber-600 font-medium">
@@ -551,7 +549,27 @@ export default function Home() {
                     <h3 className="font-serif text-xl font-bold text-slate-900">
                       Eleva.care
                     </h3>
-                    <p className="text-slate-600">Co-founder & CEO</p>
+                    <p className="text-slate-600">
+                      Co-founder & CEO — online and in-person care in Lisbon
+                    </p>
+                  </div>
+                  <div className="space-y-2 border-l-2 border-rose-200 pl-6">
+                    <div className="text-sm text-rose-600 font-medium">
+                      Present
+                    </div>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      Clínica Mulher, Lisbon
+                    </h3>
+                    <p className="text-slate-600">Collaborating clinician</p>
+                  </div>
+                  <div className="space-y-2 border-l-2 border-rose-200 pl-6">
+                    <div className="text-sm text-rose-600 font-medium">
+                      Present
+                    </div>
+                    <h3 className="font-serif text-xl font-bold text-slate-900">
+                      Centro Médico do Cartaxo
+                    </h3>
+                    <p className="text-slate-600">Collaborating clinician</p>
                   </div>
                   <div className="space-y-2 border-l-2 border-rose-200 pl-6">
                     <div className="text-sm text-rose-600 font-medium">

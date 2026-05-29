@@ -69,9 +69,16 @@ export default function AboutPage() {
                     pregnancy.
                   </p>
                   <p>
-                    Currently, I serve as a Visiting Researcher and Professor at
-                    California State University, Long Beach, where I continue my
-                    research and teaching in physiotherapy and biomechanics.
+                    I served as a Visiting Researcher and Professor at
+                    California State University, Long Beach, and I still
+                    collaborate with them on data processing and writing papers.
+                    Currently, I serve as an Adjunct Professor at the Lisbon
+                    School of Health of the Polytechnic University of Lisbon.
+                  </p>
+                  <p>
+                    Additionally, I work online and in person in Lisbon with
+                    Eleva.care, and also collaborate seeing patients in Clínica
+                    Mulher in Lisbon and in Centro Médico do Cartaxo.
                   </p>
                 </div>
               </div>
