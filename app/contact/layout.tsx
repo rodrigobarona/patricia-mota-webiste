@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Patricia Mota for research collaborations, speaking engagements, or academic inquiries. Based in Los Angeles, CA.",
+    "Get in touch with Patricia Mota for research collaborations, speaking engagements, or academic inquiries. Based in Lisbon, Portugal.",
   openGraph: {
     title: "Contact - Patricia Mota, PT, PhD",
     description:

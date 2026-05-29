@@ -114,10 +114,7 @@ export default function ContactPage() {
                           Location
                         </h3>
                         <p className="text-sm text-slate-600">
-                          California State University, Long Beach
-                        </p>
-                        <p className="text-sm text-slate-600">
-                          Los Angeles, California, United States
+                          Lisbon, Portugal
                         </p>
                       </div>
                     </div>

@@ -66,9 +66,8 @@ export default function Home() {
     ],
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Los Angeles",
-      addressRegion: "CA",
-      addressCountry: "US",
+      addressLocality: "Lisbon",
+      addressCountry: "PT",
     },
   };
 
@@ -116,7 +115,7 @@ export default function Home() {
                 <div className="flex items-center gap-4 text-sm text-slate-500">
                   <div className="flex items-center gap-1">
                     <MapPin className="h-4 w-4" />
-                    <span>Los Angeles, CA</span>
+                    <span>Lisbon, Portugal</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <Mail className="h-4 w-4" />
